@@ -1,0 +1,20 @@
+package me.ninjay.soulthmina.main;
+
+import org.bukkit.Bukkit;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import me.ninjay.soulthmina.mina.ComandoMina;
+import me.ninjay.soulthmina.mina.ComandoSetarMina;
+import me.ninjay.soulthmina.mina.EventosMina;
+
+
+public class Main extends JavaPlugin{
+	
+	@Override
+	public void onEnable() {
+		getCommand("mina").setExecutor(new ComandoMina());
+		getCommand("setarmina").setExecutor(new ComandoSetarMina());
+		Bukkit.getPluginManager().registerEvents(new EventosMina(), this);
+	}
+
+}

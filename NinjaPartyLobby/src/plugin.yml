@@ -1,0 +1,5 @@
+name: NinjaPartyLobby
+version: 1.0
+author: Ninjay_
+main: me.ninjay.ninjapartylb.main.Main
+commands:

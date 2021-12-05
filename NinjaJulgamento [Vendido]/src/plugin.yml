@@ -1,0 +1,5 @@
+name: NinjaJulgamento
+version: 1.0
+author: Ninjay_
+main: me.ninjay.ninjajulgamento.main.Main
+commands:

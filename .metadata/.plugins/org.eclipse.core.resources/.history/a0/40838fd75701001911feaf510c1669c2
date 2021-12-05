@@ -1,0 +1,13 @@
+package me.ninjay.oneperfil.ranks;
+
+import org.bukkit.entity.Player;
+
+public class RankAPI {
+	
+	public RankUp rankAPIGetRank(Player p) {
+		RankUp 
+		return ;
+		 
+	}
+
+}

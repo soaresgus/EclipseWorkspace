@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/CLIENTE/Downloads/LocalHUB/plugins/Vault-1.6.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CLIENTE/Desktop/LOCALTESTE/BungeeCord.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CLIENTE/Downloads/Factions.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CLIENTE/Downloads/mcMMO.jar"/>
+	<classpathentry kind="lib" path="C:/Users/CLIENTE/Downloads/LocalHUB/spigot.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

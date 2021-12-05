@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;EventosBigorna.java&apos; to &apos;GravetosCustom[1.16.5]/src/me.ninjay.gravetoscustom.eventos&apos;&#x0D;&#x0A;- Original project: &apos;GeleiaGoldenAnvil[1.16.5]&apos;&#x0D;&#x0A;- Destination element: &apos;GravetosCustom[1.16.5]/src/me.ninjay.gravetoscustom.eventos&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.geleiagolden.eventos.EventosBigorna.java&apos;" description="Copy compilation unit" destination="=GravetosCustom\[1.16.5\]/src&lt;me.ninjay.gravetoscustom.eventos" element1="/src&lt;me.ninjay.geleiagolden.eventos{EventosBigorna.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1633292202696" units="1" version="1.0"/>
+</session>

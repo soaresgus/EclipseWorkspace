@@ -1,0 +1,6 @@
+name: Hmm
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.aula.Main
+commands:
+  limparchat:

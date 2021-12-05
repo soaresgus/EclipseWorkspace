@@ -1,0 +1,152 @@
+#
+# $$\   $$\ $$$$$$\ $$\   $$\    $$$$$\  $$$$$$\
+# $$$\  $$ |\_$$  _|$$$\  $$ |   \__$$ |$$  __$$\
+# $$$$\ $$ |  $$ |  $$$$\ $$ |      $$ |$$ /  $$ |
+# $$ $$\$$ |  $$ |  $$ $$\$$ |      $$ |$$$$$$$$ |
+# $$ \$$$$ |  $$ |  $$ \$$$$ |$$\   $$ |$$  __$$ |
+# $$ |\$$$ |  $$ |  $$ |\$$$ |$$ |  $$ |$$ |  $$ |
+# $$ | \$$ |$$$$$$\ $$ | \$$ |\$$$$$$  |$$ |  $$ |
+# \__|  \__|\______|\__|  \__| \______/ \__|  \__|
+#
+# $$$$$$$\   $$$$$$\  $$\   $$\ $$\   $$\ $$\   $$\ $$$$$$$\
+# $$  __$$\ $$  __$$\ $$$\  $$ |$$ | $$  |$$ |  $$ |$$  __$$\
+# $$ |  $$ |$$ /  $$ |$$$$\ $$ |$$ |$$  / $$ |  $$ |$$ |  $$ |
+# $$$$$$$  |$$$$$$$$ |$$ $$\$$ |$$$$$  /  $$ |  $$ |$$$$$$$  |
+# $$  __$$< $$  __$$ |$$ \$$$$ |$$  $$<   $$ |  $$ |$$  ____/
+# $$ |  $$ |$$ |  $$ |$$ |\$$$ |$$ |\$$\  $$ |  $$ |$$ |
+# $$ |  $$ |$$ |  $$ |$$ | \$$ |$$ | \$$\ \$$$$$$  |$$ |
+# \__|  \__|\__|  \__|\__|  \__|\__|  \__| \______/ \__|
+#
+
+#//Lista de Ranks//#
+
+menu:
+  ativado: true
+  paginasSize: 6
+  proxPaginaSlot: 54
+  antePaginaSlot: 46
+  paginas: 1
+
+texto:
+  ativado: true
+  mensagem: 
+    - ' '
+    - '  &7Carvão III: &a$2.000'
+    - '  &7Carvão II: &a$4.000'
+    - '  &7Carvão I: &a$6.000' 
+    - ' '
+
+#//Lista de Ranks//#
+
+#//Rank UP//#
+
+#Confirmações
+
+confirmar:
+  ativado: true
+  
+  menu: true
+  menuSize: 5
+  
+  rankIconeSlot: 14
+  simSlot: 21
+  naoSlot: 25
+  
+  simIcone:
+    amount: 1
+    id: 35
+    data: 5
+    name: '&aConfirmar'
+    lore: []
+    enchants: ''
+  naoIcone:
+    amount: 1
+    id: 35
+    data: 14
+    name: '&cCancelar'
+    lore: []
+    enchants: ''
+  
+  simMensagem: '&aAção confirmada!'
+  naoMensagem: '&cAção cancelada!'
+  
+#Váriaveis: %sim%exemplo%sim% ; %nao%exemplo%nao ; %nick% ; %rank% ; %valor% ; %atual%
+  
+  texto:
+    ativado: false
+    mensagem: 
+    - ' '
+    - ' &a%nick%, você confirma que quer upar para o rank %rank% por %valor% coins?'
+    - ' &a&n%sim%SIM%sim%&c    &c&n%nao%NÃO%nao%'
+    - ' '
+  
+    simMensagem: '&aAção confirmada!'
+    naoMensagem: '&cAção cancelada!'
+
+#Confirmações
+
+#Mensagens
+
+#Váriaveis: %nick% ; %rank% ; %valor% ; %atual ; (Pular de linha = \n ou %linha%)
+
+semDinheiro: '&cVocê não possuí dinheiro suficiente.'
+
+playerRank: '&aSeu rank: &e%atual%'
+
+ultimoRank: '&cVocê já está no último rank.'
+
+title:
+  global:
+    ativado: true
+    title: '&6&lRANK UP'
+    subTitle: '&a%nick% evoluiu para o rank %rank%!'
+  
+  privado:
+    ativado: false
+    title: '&aParabéns!'
+    subTitle: '&aVocê evoluiu para o rank %rank%!'
+
+mensagem:
+  global:
+    ativado: true
+    mensagem:
+      - ' '
+      - ' &a%nick%, evoluiu de rank!'
+      - ' '
+ 
+  privado:
+    ativado: false
+    mensagem:
+      - ' '
+      - ' &aParabéns!'
+      - ' '
+
+actionBar:
+  global:
+    ativado: true
+    mensagem: '&a%nick% evoluiu para %rank%!'
+ 
+  privado:
+    ativado: false
+    mensagem: '&aVocê evoluiu de rank!'
+
+#Mensagens
+
+#Geral#
+
+#Lista de sons 1.8
+#https://helpch.at/docs/1.8.8/index.html?org/bukkit/Sound.html
+
+som:
+  global:
+    ativado: false
+    som: LEVEL_UP
+  
+  privado:
+    ativado: true
+    som: ENDERDRAGON_GROWL 
+    
+#Geral
+
+#//Rank UP//#
+

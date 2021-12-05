@@ -1,0 +1,78 @@
+package me.ninjay.oneperfil.ranksbeta.manager;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
+import org.bukkit.entity.Player;
+
+import net.eduard.api.lib.storage.Storable;
+
+
+public class RankUPManager implements Storable{
+
+	private HashMap<UUID, RankUP> players = new HashMap<UUID, RankUP>();
+
+	public RankUP getRank(Player p) {
+		RankUP rankpuxado = (RankUP) players.get(p.getUniqueId());
+
+		if (rankpuxado == null) {
+			RankUP primeirorank = getRank(0);
+			players.put(p.getUniqueId(), rankpuxado = primeirorank);
+		}
+		return rankpuxado;
+	}
+
+	public RankUP getRank(String nome) {
+		for (RankUP rank : ranks) {
+			if (rank.getNome().equalsIgnoreCase(nome)) {
+				return rank;
+			}
+		}
+		return null;
+	}
+
+	public RankUP getRank(int level) {
+		for (RankUP rank : ranks) {
+			if (rank.getLevel() == level) {
+				return rank;
+			}
+		}
+		return null;
+	}
+
+	public void registrar(RankUP rank) {
+		ranks.add(rank);
+	}
+
+	private ArrayList<RankUP> ranks = new ArrayList<RankUP>();
+
+	public ArrayList<RankUP> getRanks() {
+		return ranks;
+	}
+
+	public void setRanks(ArrayList<RankUP> ranks) {
+		this.ranks = ranks;
+	}
+
+	public HashMap<UUID, RankUP> getPlayers() {
+		return players;
+	}
+
+	public void setPlayers(HashMap<UUID, RankUP> players) {
+		this.players = players;
+	}
+
+	@Override
+	public Object restore(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void store(Map<String, Object> map, Object object) {
+		// TODO Auto-generated method stub
+		
+	}
+}

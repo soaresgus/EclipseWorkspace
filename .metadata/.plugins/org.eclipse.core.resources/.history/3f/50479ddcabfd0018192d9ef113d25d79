@@ -1,0 +1,46 @@
+package me.ninjay.oneinfo.estruturas;
+
+import java.time.LocalDateTime;
+
+import org.bukkit.Statistic;
+import org.bukkit.entity.Player;
+import org.bukkit.scheduler.BukkitRunnable;
+
+import me.ninjay.oneinfo.main.Main;
+import net.eduard.api.lib.BukkitConfig;
+import net.eduard.api.lib.Mine;
+
+public class DataAPI {
+
+	public static String getData(Player p, BukkitConfig config) {
+		return config.getString("Data");
+	}
+	public static void setData(Player p, BukkitConfig config) {
+		LocalDateTime now = LocalDateTime.now(); 
+		config.set("Data", now.getDayOfMonth()+"/"+now.getMonth().getValue()+"/"+now.getYear());
+		config.saveConfig();
+	}
+	public static void setUltimoLogin(Player p, BukkitConfig config) {
+		LocalDateTime now = LocalDateTime.now();
+		config.set(p.getName()+"_ultimologin", now.getDayOfMonth()+"/"+now.getMonth().getValue()+"/"+now.getYear()+" | "+now.getHour()+":"+now.getMinute()+":"+now.getSecond());
+	    config.saveConfig();
+	}
+	public static String getUltimoLogin(Player p, BukkitConfig config) {
+		return config.getString(p.getName()+"_ultimologin");
+	}
+	public static void setTempoOnline(Player p, BukkitConfig config) {
+	    new BukkitRunnable() {
+			int i = 0;
+			@Override
+			public void run() {
+				i++;
+			}
+			
+		}.runTaskTimer(Main.getPlugin(Main.class), 72000, 72000);
+		config.set(p.getName()+"_tempon", i);
+	}
+	public static String getTempoOnline(Player p, BukkitConfig config) {
+		return config.getString(p.getName()+"_tempon");
+	}
+	
+}

@@ -1,0 +1,6 @@
+name: Testes1.12
+version: 1.0
+author: Ninjay_
+main: me.ninjay.teste112.main.Main
+commands:
+  teste:

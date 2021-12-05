@@ -1,0 +1,7 @@
+name: SafeClans
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.safeclans.main.Main
+commands:
+  clan:
+   aliases: [clans,guilda]

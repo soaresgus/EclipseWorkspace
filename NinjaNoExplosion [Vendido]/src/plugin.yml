@@ -1,0 +1,5 @@
+name: NinjaNoExplosion
+version: 1.0
+author: Ninjay_
+main: me.ninjay.ninjaexplosion.main.Main
+commands:

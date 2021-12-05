@@ -1,0 +1,8 @@
+name: RedeOneAlmas
+version: 1.0
+author: Ninjay_
+depend: [CursoAPI]
+main: me.ninjay.onealmas.main.Main
+commands:
+  alma:
+    aliases: [almas]

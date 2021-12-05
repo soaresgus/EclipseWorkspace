@@ -1,0 +1,11 @@
+name: RedeOneLogin
+version: 1.0
+author: MyNameIsNinjay
+depend: [CursoAPI]
+main: me.ninjay.onelogin.main.Main
+commands:
+  login:
+  register:
+  trocarsenha:
+  removersenha:
+  versenha:

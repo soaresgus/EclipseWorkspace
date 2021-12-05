@@ -1,0 +1,9 @@
+name: KustTickets
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustickets.main.Main
+commands:
+  ticket:
+    aliases: [tickets]
+  cancelar:
+  teste:

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;me.ninjay.ninjaapi.utils&apos; to &apos;NinjaCxC/src/me.ninjay.ninjacxc&apos;&#x0D;&#x0A;- Original project: &apos;NinjaAPI&apos;&#x0D;&#x0A;- Destination element: &apos;NinjaCxC/src/me.ninjay.ninjacxc&apos;&#x0D;&#x0A;- Original element: &apos;NinjaAPI/src/me.ninjay.ninjaapi.utils&apos;" description="Copy package" destination="=NinjaCxC/src&lt;me.ninjay.ninjacxc" element1="/src&lt;me.ninjay.ninjaapi.utils" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1557354797449" version="1.0"/>
+</session>

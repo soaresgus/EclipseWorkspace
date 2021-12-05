@@ -1,0 +1,24 @@
+#caixa.admin
+#/caixagive
+#Encantamentos ID: 
+#https://www.minecraftforum.net/forums/minecraft-java-edition/creative-mode/365638-enchantment-id-list
+
+ItensTotal: 1
+
+Raridade:
+ 1:
+  ativo: false
+  growl: false
+  msg: '&6&l[CM] &e$player tirou um item COMUM na Caixa Misteriosa $nome'
+ 2:
+  ativo: false
+  growl: false
+  msg: '&6&l[CM] &e$player tirou um item INCOMUM na Caixa Misteriosa $nome'
+ 3:
+  ativo: true
+  growl: false
+  msg: '&6&l[CM] &e$player tirou um item RARO na Caixa Misteriosa $nome'
+ 4:
+  ativo: true
+  growl: true
+  msg: '&6&l[CM] &e$player tirou um item LENDÁRIO na Caixa Misteriosa $nome'

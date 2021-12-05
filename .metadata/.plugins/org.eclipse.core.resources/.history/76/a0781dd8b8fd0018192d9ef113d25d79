@@ -1,0 +1,10 @@
+package me.ninjay.oneinfo.estruturas;
+
+import net.eduard.api.lib.BukkitConfig;
+
+public class EventosAPI {
+	
+	public static Long(Player p, BukkitConfig config) {
+		
+	}
+}

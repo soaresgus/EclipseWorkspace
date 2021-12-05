@@ -1,0 +1,10 @@
+#Permissoes:
+#home.limite - Aumenta o limite de homes
+
+#Limite de homes
+LimiteMembro: 3
+LimiteVip: 5
+
+#Tempo de teleporte (segundos)
+TempoMembro: 5
+TempoVip: 3

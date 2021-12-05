@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ComandoSpawn.java&apos; to &apos;me.ninjay.safecore.comandos.lag.ComandoSpawn.java&apos;&#x0D;&#x0A;- Original project: &apos;SafeCore&apos;&#x0D;&#x0A;- Destination element: &apos;me.ninjay.safecore.comandos.lag.ComandoSpawn.java&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.safecore.comandos.lag.ComandoSpawn.java&apos;" description="Copy compilation unit" destination="/src&lt;me.ninjay.safecore.comandos.lag{ComandoSpawn.java" element1="/src&lt;me.ninjay.safecore.comandos.lag{ComandoSpawn.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1593901239920" units="1" version="1.0"/>
+</session>

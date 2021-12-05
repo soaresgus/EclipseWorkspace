@@ -1,0 +1,324 @@
+package me.ninjay.oneperfil.ranks;
+
+import javax.xml.crypto.Data;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.inventory.ItemStack;
+
+import me.ninjay.oneperfil.almas.estruturas.AlmasAPI;
+import me.ninjay.oneperfil.estruturas.BlocosAPI;
+import me.ninjay.oneperfil.estruturas.DataAPI;
+import me.ninjay.oneperfil.main.Main;
+import net.eduard.api.lib.Mine;
+import net.eduard.api.lib.modules.VaultAPI;
+
+public class EventosRankUP implements Listener {
+
+	@EventHandler
+	public void ConfirmarRank1(InventoryClickEvent e) {
+		ItemStack confirmar = Mine.newItem(Material.STAINED_CLAY, "§aConfirmar", 1, 5);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [1]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(confirmar)) {
+				if (BlocosAPI.getBlocos(p, Main.blocos) == 10000) {
+					p.getOpenInventory().close();
+					VaultAPI.getPermission().playerAdd(p, "rank1.rank");
+					VaultAPI.getPermission().playerAdd(p, "rank2.rank");
+					Bukkit.broadcastMessage("§6§lONE Ranks\n \n§e[" + p.getName() + "] §6Upou para o §eRank [2].\n ");
+					BlocosAPI.removeBlocos(p, Main.blocos, (long) 10000);
+				} else {
+					p.getOpenInventory().close();
+					p.sendMessage("§cVocê não tem blocos o suficiente para upar de rank.");
+				}
+			}
+		}
+	}
+
+	@EventHandler
+	public void NegarRank1(InventoryClickEvent e) {
+		ItemStack negar = Mine.newItem(Material.STAINED_CLAY, "§cCancelar", 1, 14);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [1]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(negar)) {
+				p.getOpenInventory().close();
+				p.sendMessage("§cVocê negou o pedido para upar de rank.");
+				return;
+			} else {
+				return;
+
+			}
+		}
+	}
+
+	@EventHandler
+	public void ConfirmarRank2(InventoryClickEvent e) {
+		ItemStack confirmar = Mine.newItem(Material.STAINED_CLAY, "§aConfirmar", 1, 5);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [2]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(confirmar)) {
+				if (VaultAPI.getEconomy().has(p, 300000)) {
+					p.getOpenInventory().close();
+					VaultAPI.getPermission().playerRemove(p, "rank2.rank");
+					VaultAPI.getPermission().playerAdd(p, "rank3.rank");
+					Bukkit.broadcastMessage("§6§lONE Ranks\n \n§e[" + p.getName() + "] §6Upou para o §eRank [3].\n ");
+					VaultAPI.getEconomy().withdrawPlayer(p, 300000);
+				} else {
+					p.getOpenInventory().close();
+					p.sendMessage("§cVocê não tem dinheiro o suficiente para upar de rank.");
+				}
+			}
+		}
+	}
+
+	@EventHandler
+	public void NegarRank2(InventoryClickEvent e) {
+		ItemStack negar = Mine.newItem(Material.STAINED_CLAY, "§cCancelar", 1, 14);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [2]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(negar)) {
+				p.getOpenInventory().close();
+				p.sendMessage("§cVocê negou o pedido para upar de rank.");
+				return;
+			} else {
+				return;
+
+			}
+		}
+	}
+
+	@EventHandler
+	public void ConfirmarRank3(InventoryClickEvent e) {
+		ItemStack confirmar = Mine.newItem(Material.STAINED_CLAY, "§aConfirmar", 1, 5);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [3]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(confirmar)) {
+				if (DataAPI.getTempoOnline(p, Main.data) == 12) {
+					p.getOpenInventory().close();
+					VaultAPI.getPermission().playerRemove(p, "rank3.rank");
+					VaultAPI.getPermission().playerAdd(p, "rank4.rank");
+					Bukkit.broadcastMessage("§6§lONE Ranks\n \n§e[" + p.getName() + "] §6Upou para o §eRank [4].\n ");
+				} else {
+					p.getOpenInventory().close();
+					p.sendMessage("§cVocê não tem tempo online o suficiente para upar de rank.");
+				}
+			}
+		}
+	}
+
+	@EventHandler
+	public void NegarRank3(InventoryClickEvent e) {
+		ItemStack negar = Mine.newItem(Material.STAINED_CLAY, "§cCancelar", 1, 14);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [3]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(negar)) {
+				p.getOpenInventory().close();
+				p.sendMessage("§cVocê negou o pedido para upar de rank.");
+				return;
+			} else {
+				return;
+
+			}
+		}
+	}
+
+	@EventHandler
+	public void ConfirmarRank4(InventoryClickEvent e) {
+		ItemStack confirmar = Mine.newItem(Material.STAINED_CLAY, "§aConfirmar", 1, 5);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [4]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(confirmar)) {
+				if (AlmasAPI.getAlmas(p, Main.almas) == 150) {
+					p.getOpenInventory().close();
+					VaultAPI.getPermission().playerRemove(p, "rank4.rank");
+					VaultAPI.getPermission().playerAdd(p, "rank5.rank");
+					Bukkit.broadcastMessage("§6§lONE Ranks\n \n§e[" + p.getName() + "] §6Upou para o §eRank [5].\n ");
+					AlmasAPI.removeAlmas(p, Main.almas, (long) 150);
+				} else {
+					p.getOpenInventory().close();
+					p.sendMessage("§cVocê não tem almas o suficiente para upar de rank.");
+				}
+			}
+		}
+	}
+
+	@EventHandler
+	public void NegarRank4(InventoryClickEvent e) {
+		ItemStack negar = Mine.newItem(Material.STAINED_CLAY, "§cCancelar", 1, 14);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [4]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(negar)) {
+				p.getOpenInventory().close();
+				p.sendMessage("§cVocê negou o pedido para upar de rank.");
+				return;
+			} else {
+				return;
+
+			}
+		}
+	}
+
+	@EventHandler
+	public void ConfirmarRank5(InventoryClickEvent e) {
+		ItemStack confirmar = Mine.newItem(Material.STAINED_CLAY, "§aConfirmar", 1, 5);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [5]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(confirmar)) {
+				if (DataAPI.getTempoOnline(p, Main.data) == 20) {
+					p.getOpenInventory().close();
+					VaultAPI.getPermission().playerRemove(p, "rank5.rank");
+					VaultAPI.getPermission().playerAdd(p, "rank6.rank");
+					Bukkit.broadcastMessage("§6§lONE Ranks\n \n§e[" + p.getName() + "] §6Upou para o §eRank [6].\n ");
+				} else {
+					p.getOpenInventory().close();
+					p.sendMessage("§cVocê não tem tempo online o suficiente para upar de rank.");
+				}
+			}
+		}
+	}
+
+	@EventHandler
+	public void NegarRank5(InventoryClickEvent e) {
+		ItemStack negar = Mine.newItem(Material.STAINED_CLAY, "§cCancelar", 1, 14);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [5]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(negar)) {
+				p.getOpenInventory().close();
+				p.sendMessage("§cVocê negou o pedido para upar de rank.");
+				return;
+			} else {
+				return;
+
+			}
+		}
+	}
+
+	@EventHandler
+	public void ConfirmarRank6(InventoryClickEvent e) {
+		ItemStack confirmar = Mine.newItem(Material.STAINED_CLAY, "§aConfirmar", 1, 5);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [6]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(confirmar)) {
+				if (AlmasAPI.getAlmas(p, Main.almas) == 250) {
+					p.getOpenInventory().close();
+					VaultAPI.getPermission().playerRemove(p, "rank6.rank");
+					VaultAPI.getPermission().playerAdd(p, "rank7.rank");
+					Bukkit.broadcastMessage("§6§lONE Ranks\n \n§e[" + p.getName() + "] §6Upou para o §eRank [7].\n ");
+					AlmasAPI.removeAlmas(p, Main.almas, (long) 250);
+				} else {
+					p.getOpenInventory().close();
+					p.sendMessage("§cVocê não tem almas o suficiente para upar de rank.");
+				}
+			}
+		}
+	}
+
+	@EventHandler
+	public void NegarRank6(InventoryClickEvent e) {
+		ItemStack negar = Mine.newItem(Material.STAINED_CLAY, "§cCancelar", 1, 14);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [6]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(negar)) {
+				p.getOpenInventory().close();
+				p.sendMessage("§cVocê negou o pedido para upar de rank.");
+				return;
+			} else {
+				return;
+
+			}
+		}
+
+	}
+
+	@EventHandler
+	public void ConfirmarRank7(InventoryClickEvent e) {
+		ItemStack confirmar = Mine.newItem(Material.STAINED_CLAY, "§aConfirmar", 1, 5);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [7]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(confirmar)) {
+				if (VaultAPI.getEconomy().has(p, 1000000)) {
+					p.getOpenInventory().close();
+					VaultAPI.getPermission().playerRemove(p, "rank7.rank");
+					VaultAPI.getPermission().playerAdd(p, "rank8.rank");
+					Bukkit.broadcastMessage("§6§lONE Ranks\n \n§e[" + p.getName() + "] §6Upou para o §eRank [8].\n ");
+					VaultAPI.getEconomy().withdrawPlayer(p, 1000000);
+				} else {
+					p.getOpenInventory().close();
+					p.sendMessage("§cVocê não tem money o suficiente para upar de rank.");
+				}
+			}
+		}
+	}
+
+	@EventHandler
+	public void NegarRank7(InventoryClickEvent e) {
+		ItemStack negar = Mine.newItem(Material.STAINED_CLAY, "§cCancelar", 1, 14);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [7]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(negar)) {
+				p.getOpenInventory().close();
+				p.sendMessage("§cVocê negou o pedido para upar de rank.");
+				return;
+			} else {
+				return;
+
+			}
+		}
+	}
+	@EventHandler
+	public void ConfirmarRank8(InventoryClickEvent e) {
+		ItemStack confirmar = Mine.newItem(Material.STAINED_CLAY, "§aConfirmar", 1, 5);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [7]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(confirmar)) {
+                if(VaultAPI.getEconomy().has(p, 1000000)) {
+                	p.getOpenInventory().close();
+                	VaultAPI.getPermission().playerRemove(p, "rank7.rank");
+					VaultAPI.getPermission().playerAdd(p, "rank8.rank");
+					Bukkit.broadcastMessage("§6§lONE Ranks\n \n§e["+p.getName()+"] §6Upou para o §eRank [8].\n ");
+                    VaultAPI.getEconomy().withdrawPlayer(p, 1000000);
+                }else {
+                	p.getOpenInventory().close();
+                	p.sendMessage("§cVocê não tem money o suficiente para upar de rank.");
+                }
+			}
+		}
+	}
+
+	@EventHandler
+	public void NegarRank8(InventoryClickEvent e) {
+		ItemStack negar = Mine.newItem(Material.STAINED_CLAY, "§cCancelar", 1, 14);
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Rank [7]")) {
+			e.setCancelled(true);
+			if (e.getCurrentItem().isSimilar(negar)) {
+				p.getOpenInventory().close();
+				p.sendMessage("§cVocê negou o pedido para upar de rank.");
+				return;
+			} else {
+				return;
+
+			}
+		}
+	}
+
+}

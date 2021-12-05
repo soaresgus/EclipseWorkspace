@@ -1,0 +1,11 @@
+name: NinjaKitPvP
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.ninjakitpvp.main.Main
+commands:
+  set:
+  spawn:
+  build:
+  reloadconfig:
+  fly:
+  warps:

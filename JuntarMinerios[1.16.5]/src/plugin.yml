@@ -1,0 +1,6 @@
+name: JuntarMinerios
+version: 1.0
+author: Ninjay_
+main: me.ninjay.juntarminerios.main.Main
+commands:
+  daritens:

@@ -1,0 +1,7 @@
+name: RobinTnT
+version: 1.0
+author: Ninjay_
+main: me.ninjay.robintnt.main.Main
+api-version: 1.17
+commands:
+  daritens:

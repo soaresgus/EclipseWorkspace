@@ -1,0 +1,7 @@
+name: KustCaixas
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustcaixas.main.Main
+commands:
+  caixashop:
+  caixagive:

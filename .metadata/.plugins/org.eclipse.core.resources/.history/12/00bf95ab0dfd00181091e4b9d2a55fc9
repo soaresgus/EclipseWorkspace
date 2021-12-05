@@ -1,0 +1,22 @@
+package me.ninjay.oneinfo.estruturas;
+
+import java.time.LocalDateTime;
+import org.bukkit.entity.Player;
+
+import net.eduard.api.lib.BukkitConfig;
+
+public class DataAPI {
+
+	public static String getData(Player p, BukkitConfig config) {
+		return config.getString("Data");
+	}
+	public static void setData(Player p, BukkitConfig config) {
+		LocalDateTime now = LocalDateTime.now(); 
+		config.set("Data", now.getDayOfMonth()+"/"+now.getMonth()+"/"+now.getYear());
+		config.saveConfig();
+	}
+	public static void main(String args[]) {
+		LocalDateTime now = LocalDateTime.now(); 
+		System.out.println(now.getDayOfMonth()+"/"+now.getMonth().getValue()+"/"+now.getYear());
+	}
+}

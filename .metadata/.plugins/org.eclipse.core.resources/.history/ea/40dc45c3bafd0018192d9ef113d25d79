@@ -1,0 +1,18 @@
+package me.ninjay.oneinfo.estruturas;
+
+import org.bukkit.entity.Player;
+
+import net.eduard.api.lib.BukkitConfig;
+
+public class StatsAPI {
+	
+	public static Double getKills(Player p, BukkitConfig config) {
+		return config.getDouble(p.getName()+"_kills");
+	}
+	public static Double getMortes(Player p, BukkitConfig config) {
+		return config.getDouble(p.getName()+"_mortes");
+		
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+#Configuração McMMO
+Escavacao:
+  3-0: 50
+  3-1: 50
+Mineracao:
+  1-0: 50
+  1-1: 50
+Espadas:
+  xp: 50
+Reparacao:
+  xp: 

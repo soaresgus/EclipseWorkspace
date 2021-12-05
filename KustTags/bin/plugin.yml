@@ -1,0 +1,7 @@
+name: KustTags
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kusttags.main.Main
+commands:
+  cargo:
+   aliases: [grupo, cargos, group]

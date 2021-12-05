@@ -1,0 +1,6 @@
+name: SoulthCaptcha
+version: 1.0
+author: Ninjay_
+depend: [CursoAPI]
+main: me.ninjay.soulthcleardrops.main.Main
+commands:

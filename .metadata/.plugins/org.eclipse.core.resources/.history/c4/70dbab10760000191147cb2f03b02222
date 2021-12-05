@@ -1,0 +1,9 @@
+package me.ninjay.oneperfil.ranks;
+
+import net.eduard.api.lib.storage.Storable;
+
+public class RankUp implements Storable{
+	
+	
+
+}

@@ -1,0 +1,6 @@
+name: KustYoutuber
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustyoutuber.main.Main
+commands:
+  youtuber:

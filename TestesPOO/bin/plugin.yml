@@ -1,0 +1,6 @@
+name: Teste
+version: 1.0
+main: me.ninjay.poo.main.Main
+commands:
+  hm:
+  hmm:

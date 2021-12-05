@@ -1,0 +1,13 @@
+name: AureaLobby
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.aurealobby.Main
+depend: [CursoAPI]
+commands:
+  setspawn:
+  cargo:
+   aliases: [tag]
+  thor:
+  flyoff:
+  pvp:
+  setarena:

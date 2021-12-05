@@ -1,0 +1,7 @@
+booster: 200
+reset: 200
+instantaneo:
+ valor: 200
+ chance: 50
+raio: 200
+poder: 15

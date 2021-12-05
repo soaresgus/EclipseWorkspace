@@ -1,0 +1,11 @@
+1619115703111	Rename package 'me.ninjay.template'
+1619115792238	Rename type 'ComandoTemplate'
+1619115832528	Rename type 'KitController'
+1619120155458	Delete element
+1619120833343	Delete element
+1619123436144	Copy compilation unit
+1619125549271	Encapsulate field 'slot'
+1619125553510	Encapsulate field 'id'
+1619125632792	Encapsulate field 'vip'
+1619125641555	Encapsulate field 'perm'
+1619227810518	Encapsulate field 'cooldown'

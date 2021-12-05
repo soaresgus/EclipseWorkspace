@@ -1,0 +1,6 @@
+name: GeleiaBedrock
+version: 1.0
+author: Ninjay_
+main: me.ninjay.geleiabedrock.main.Main
+commands:
+  daritens:

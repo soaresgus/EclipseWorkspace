@@ -1,0 +1,5 @@
+name: KustCombatLog
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustcombatlog.main.Main
+commands:

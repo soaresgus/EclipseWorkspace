@@ -1,0 +1,19 @@
+name: Curso
+version: 1.0
+author: Ninjay_
+main: me.ninjay.curso.main.Main
+depend: [CursoAPI]
+commands:
+  setspawn:
+  spawn:
+  delay:
+  cooldown:
+  cooldown2:
+  timer:
+  givecaixa:
+    aliases: [darcaixa]
+  cash:
+  loja:
+  barapicmd:
+  npc:
+  

@@ -1,0 +1,14 @@
+
+# Plugin feito por: #
+#    @ManoNinjay    #
+
+#Use segundos como forma de tempo 
+TempoParaCadaCombustivelDarDrops: 5
+#Coloque a quantidade de drops por combustivel
+QuantidadeDeDrops: 10
+#Use segundos como forma de tempo
+TempoParaCadaEssenciaVirarCombustivel: 5
+#Limite de drops no /maquina drops
+LimiteDeDrops: 10000
+
+

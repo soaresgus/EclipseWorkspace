@@ -1,0 +1,6 @@
+name: Template
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.template.main.Main
+commands:
+  template:

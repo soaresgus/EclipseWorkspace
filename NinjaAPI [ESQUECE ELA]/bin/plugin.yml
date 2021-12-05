@@ -1,0 +1,9 @@
+name: NinjaAPI
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.ninjaapi.main.Main
+commands:
+  evento:
+  gladiator:
+  vip:
+  cash:

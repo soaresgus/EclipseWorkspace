@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from workspace&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     me.ninjay.curso.caixa.Caixa.java&#x0D;&#x0A;     me.ninjay.upsoulth.ranks.Rank.java&#x0D;&#x0A;     me.ninjay.upsoulth.ranks.RankAPI.java&#x0D;&#x0A;     me.ninjay.upsoulth.ranks.RankControler.java&#x0D;&#x0A;     me.ninjay.upsoulth.ranks.RankManager.java" description="Delete elements" element1="=RedeSoulth/src&lt;me.ninjay.upsoulth.ranks{RankAPI.java" element2="=RedeSoulth/src&lt;me.ninjay.upsoulth.ranks{Rank.java" element3="=RedeSoulth/src&lt;me.ninjay.upsoulth.ranks{RankControler.java" element4="=Curso/src&lt;me.ninjay.curso.caixa{Caixa.java" element5="=RedeSoulth/src&lt;me.ninjay.upsoulth.ranks{RankManager.java" elements="5" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1542810108607" subPackages="false" version="1.0"/>
+</session>

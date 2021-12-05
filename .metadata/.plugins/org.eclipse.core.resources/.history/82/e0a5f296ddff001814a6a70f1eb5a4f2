@@ -1,0 +1,58 @@
+package me.ninjay.oneperfil.ranks;
+
+import org.bukkit.Material;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+
+import net.eduard.api.lib.Mine;
+
+public class ComandoRanks implements CommandExecutor {
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String lb, String[] args) {
+		if(sender instanceof Player) {
+			Player p = (Player) sender;
+			Inventory ranks = Mine.newInventory("Ranks 01", 9*5);
+			
+			
+			ItemStack um = Mine.newItem("§6Rank [1]", Material.COAL, 1, 0, "§fValor: §a$12.5K","§fBlocos: 30.000");
+			ItemStack dois = Mine.newItem("§6Rank [2]", Material.COAL, 2, 0, "§fValor: §a$21.87K","§fBlocos: 35.000");
+			ItemStack tres = Mine.newItem("§6Rank [3]", Material.COAL, 3, 0, "§fValor: §a$38.28K","§fBlocos: 40.000");
+			
+			ItemStack quatro = Mine.newItem("§6Dark [1]", Material.RED_MUSHROOM, 1, 0, "§fValor: §a$66.99K","§fBlocos: 45.000");
+			ItemStack cinco = Mine.newItem("§6Dark [2]", Material.RED_MUSHROOM, 2, 0, "§fValor: §a$117.21K","§fBlocos: 50.000");
+			ItemStack seis = Mine.newItem("§6Dark I", Material.RED_MUSHROOM, 3, 0, "§fValor: §a$215.11K","§fBlocos: 55.000");
+			
+			ItemStack sete = Mine.newItem("§6Flight [1]", Material.SUGAR, 1, 0, "§fValor: §a$359K","§fBlocos: 60.000");
+			ItemStack oito = Mine.newItem("§6Flight [2]", Material.SUGAR, 2, 0, "§fValor: §a$628.21K","§fBlocos: 65.000");
+			ItemStack nove = Mine.newItem("§6Flight I", Material.SUGAR, 3, 0, "§fValor: §a$1.199M","§fBlocos: 70.000");
+			
+			ItemStack dez = Mine.newItem("§6Souls [1]", Material.GOLD_NUGGET, 1, 0, "§fValor: §a$1.924M","§fBlocos: 75.000");
+			
+			
+			ranks.setItem(Mine.getPosition(2, 3), um);
+			ranks.setItem(Mine.getPosition(3, 3), dois);
+			ranks.setItem(Mine.getPosition(4, 3), tres);
+			
+			ranks.setItem(Mine.getPosition(2, 4), quatro);
+			ranks.setItem(Mine.getPosition(3, 4), cinco);
+			ranks.setItem(Mine.getPosition(4, 4), seis);
+			
+			ranks.setItem(Mine.getPosition(2, 5), sete);
+			ranks.setItem(Mine.getPosition(3, 5), oito);
+			ranks.setItem(Mine.getPosition(4, 5), nove);
+			
+			ranks.setItem(Mine.getPosition(2, 6), dez);
+			
+			
+			p.openInventory(ranks);
+			
+		}
+		return false;
+	}
+
+}

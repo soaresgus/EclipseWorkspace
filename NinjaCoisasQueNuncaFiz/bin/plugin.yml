@@ -1,0 +1,8 @@
+name: NinjaCoisasQueNuncaFiz
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.nuncafiz.main.Main
+commands:
+  darmaquina:
+  staff:
+  s:

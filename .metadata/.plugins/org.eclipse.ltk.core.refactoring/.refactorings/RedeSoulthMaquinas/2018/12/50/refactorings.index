@@ -1,0 +1,6 @@
+1544493107268	Rename package 'me.ninjay.template'
+1544493120305	Rename package 'me.ninjay.redesoulthmaquinas'
+1544493546904	Rename type 'ComandoTemplate'
+1544495014255	Encapsulate field 'quantidade'
+1544495554175	Rename type 'ComandoMaquinas'
+1544505832284	Encapsulate field 'valordrop'

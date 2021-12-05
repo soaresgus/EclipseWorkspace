@@ -1,0 +1,7 @@
+name: RedeOneMvP
+version: 1.0
+main: me.ninjay.onemvp.main.Main
+author: MyNameIsNinjay
+depend: [CursoAPI]
+commands:
+  mvp:

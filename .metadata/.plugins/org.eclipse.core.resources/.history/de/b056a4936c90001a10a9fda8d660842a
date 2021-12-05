@@ -1,0 +1,35 @@
+package me.ninjay.safecore.estruturas;
+
+import java.util.ArrayList;
+
+import me.ninjay.safecore.utils.Storable;
+
+public class TagsManager implements Storable{
+	
+	public Tags getTagPorId(Integer id) {
+		for(Tags tag : tags) {
+			if(tag.getId() == id) {
+				return tag;
+			}
+		}
+		return null;
+		
+	}
+	
+	public Tags getTagPorName(String name) {
+		for(Tags tag : tags) {
+			if(tag.getName().equalsIgnoreCase((name))
+		}
+	}
+	
+	private ArrayList<Tags> tags = new ArrayList<>();
+
+	public ArrayList<Tags> getTags() {
+		return tags;
+	}
+
+	public void setTags(ArrayList<Tags> tags) {
+		this.tags = tags;
+	}
+
+}

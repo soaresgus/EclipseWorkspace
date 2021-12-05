@@ -1,0 +1,5 @@
+name: OlympicBungee
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.olympicbungee.main.BungeeMain
+commands:

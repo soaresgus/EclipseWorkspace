@@ -1,0 +1,6 @@
+name: KustLogs
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustlogs.main.Main
+commands:
+  localizar:

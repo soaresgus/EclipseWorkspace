@@ -1,0 +1,6 @@
+name: CursoBungee
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.bungee.main.BungeeMain
+commands: 
+  

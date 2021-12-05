@@ -1,0 +1,7 @@
+name: KustSpawners
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustspawners.main.Main
+commands:
+  setarmob:
+   aliases: [setmob, setmobspawn, setarmobspawn]

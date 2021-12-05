@@ -1,0 +1,7 @@
+name: SafeRankUP
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.saferankup.main.Main
+commands:
+  ranks:
+  rankup:

@@ -1,0 +1,5 @@
+Perms: set.admin
+       build.admin
+       nome.kit
+       reload.admin
+       fly.perm

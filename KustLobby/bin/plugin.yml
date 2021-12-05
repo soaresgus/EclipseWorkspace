@@ -1,0 +1,7 @@
+name: KustLobby
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustlobby.main.Main
+commands:
+  conectar:
+  npch:

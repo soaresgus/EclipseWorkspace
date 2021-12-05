@@ -1,0 +1,8 @@
+name: MelMagico
+version: 1.0
+author: Ninjay_
+main: me.ninjay.melmagico.main.Main
+api-version: 1.16
+commands:
+  daritens:
+  ativar:

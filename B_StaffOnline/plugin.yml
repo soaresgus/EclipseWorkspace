@@ -1,0 +1,6 @@
+name: B_StaffOnline
+authors: [BaconCodes]
+version: 1.0
+main: net.b_staffonline.Main
+commands:
+  staffonline:

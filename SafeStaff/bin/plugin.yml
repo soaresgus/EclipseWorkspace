@@ -1,0 +1,20 @@
+name: SafeStaff
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.safestaff.main.Main
+commands:
+  s:
+   aliases: [staffchat]
+  punir:
+  hacker:
+   aliases: [hack]
+  tph:
+   aliases: [tphacker]
+  tpm:
+   aliases: [tpmina]
+  v:
+   aliases: [vanish]
+  duvida:
+   aliases: [ajuda]
+  responder:
+  

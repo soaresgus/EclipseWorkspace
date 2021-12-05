@@ -1,0 +1,6 @@
+name: NinjaSalvaVidas
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.salvavidas.main.Main
+commands:
+  givesv:

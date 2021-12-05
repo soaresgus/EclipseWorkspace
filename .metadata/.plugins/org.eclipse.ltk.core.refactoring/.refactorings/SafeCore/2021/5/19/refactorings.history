@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ComandoSetarMob.java&apos; to &apos;KustSpawners/src/me.ninjay.kustspawners.comandos&apos;&#x0D;&#x0A;- Original project: &apos;SafeCore&apos;&#x0D;&#x0A;- Destination element: &apos;KustSpawners/src/me.ninjay.kustspawners.comandos&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.safecore.comandos.spawners.ComandoSetarMob.java&apos;" description="Copy compilation unit" destination="=KustSpawners/src&lt;me.ninjay.kustspawners.comandos" element1="/src&lt;me.ninjay.safecore.comandos.spawners{ComandoSetarMob.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1620252691241" units="1" version="1.0"/>
+</session>

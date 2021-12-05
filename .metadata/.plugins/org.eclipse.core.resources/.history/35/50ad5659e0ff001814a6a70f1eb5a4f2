@@ -1,0 +1,9 @@
+package me.ninjay.oneperfil.ranks;
+
+import org.bukkit.entity.Player;
+import org.bukkit.event.Listener;
+
+public class EventosRanks implements Listener{
+	
+	
+}

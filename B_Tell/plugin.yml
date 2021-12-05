@@ -1,0 +1,7 @@
+name: B_Tell
+authors: [BaconCodes]
+version: 1.0
+main: net.b_tell.Main
+commands:
+  tell:
+  telltoggle:

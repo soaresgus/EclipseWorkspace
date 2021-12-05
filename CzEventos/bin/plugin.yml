@@ -1,0 +1,7 @@
+name: CzEventos
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.czeventos.main.Main
+commands:
+  loteria:
+  bolao:

@@ -1,0 +1,21 @@
+package me.ninjay.upsoulth.captcha;
+
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+
+import me.ninjay.upsoulth.main.Main;
+
+public class EventosCaptcha implements Listener {
+	
+	@EventHandler
+	public void aoEntrar(PlayerJoinEvent e) {
+		Player p = e.getPlayer();
+		Main.tempo = EstruturaTempo.PRE;
+		if(Main.tempo == EstruturaTempo.PRE) {
+			EstruturaGlobal.abrir(p);
+		}
+				
+	}
+}

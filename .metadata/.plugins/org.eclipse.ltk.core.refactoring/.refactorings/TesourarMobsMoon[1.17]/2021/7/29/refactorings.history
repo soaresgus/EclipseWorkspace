@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;me.ninjay.tesourargeleia&apos; to &apos;me.ninjay.tesourarmoon&apos;&#x0D;&#x0A;- Original project: &apos;TesourarMobsMoon[1.17]&apos;&#x0D;&#x0A;- Original element: &apos;TesourarMobsMoon[1.17]/src/me.ninjay.tesourargeleia&apos;&#x0D;&#x0A;- Renamed element: &apos;TesourarMobsMoon[1.17]/src/me.ninjay.tesourarmoon&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings&#x0D;&#x0A;- Rename subpackages of the package" description="Rename package &apos;me.ninjay.tesourargeleia&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;me.ninjay.tesourargeleia" name="me.ninjay.tesourarmoon" qualified="false" references="true" stamp="1626415492930" textual="false" version="1.0"/>
+</session>

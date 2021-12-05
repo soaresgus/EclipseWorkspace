@@ -1,0 +1,5 @@
+ackage me.ninjay.oneperfil.ranksbeta.manager;
+
+public @interface Reference {
+
+}

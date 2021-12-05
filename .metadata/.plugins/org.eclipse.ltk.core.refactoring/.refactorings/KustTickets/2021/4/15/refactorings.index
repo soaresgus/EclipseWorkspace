@@ -1,0 +1,10 @@
+1617803859934	Rename package 'me.ninjay.template'
+1617803921907	Rename type 'ComandoTemplate'
+1617803934715	Rename type 'EventosTemplate'
+1617807569649	Delete element
+1617807580191	Delete element
+1617807590871	Rename type 'Main'
+1617807592835	Copy compilation unit
+1617807595902	Delete element
+1617808862904	Delete element
+1617829075013	Encapsulate field 'connection'

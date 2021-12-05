@@ -1,0 +1,12 @@
+name: AureaGalaxy
+version: 1.0
+author: Ninjay_
+depend: [CursoAPI]
+main: me.ninjay.galaxy.main.Main
+commands:
+  ranks:
+  cash:
+  setarspawn:
+  spawn:
+  kit:
+   

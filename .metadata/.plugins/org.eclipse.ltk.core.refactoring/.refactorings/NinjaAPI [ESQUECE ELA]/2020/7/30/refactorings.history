@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;SafeCash/src/me.ninjay.safecash.estruturas&apos;&#x0D;&#x0A;- Original project: &apos;NinjaAPI [ESQUECE ELA]&apos;&#x0D;&#x0A;- Destination element: &apos;SafeCash/src/me.ninjay.safecash.estruturas&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     me.ninjay.ninjaapi.bukkit.CashAPI.ComandoCash.java&#x0D;&#x0A;     me.ninjay.ninjaapi.bukkit.CashAPI.CashAPI.java" description="Copy compilation units" destination="=SafeCash/src&lt;me.ninjay.safecash.estruturas" element1="/src&lt;me.ninjay.ninjaapi.bukkit.CashAPI{ComandoCash.java" element2="/src&lt;me.ninjay.ninjaapi.bukkit.CashAPI{CashAPI.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1595476555324" units="2" version="1.0"/>
+</session>

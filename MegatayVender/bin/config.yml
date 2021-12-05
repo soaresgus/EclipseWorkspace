@@ -1,0 +1,31 @@
+
+# Plugin feito por: #
+#    @ManoNinjay    #
+
+#Extra
+LimiteDeDrops: 10000
+TempoDoAutoVenderEmSegundos: 3
+TempoParaVenderShiftEmSegundos: 3
+
+#Valor de cada drop
+lapisb: 1
+lapism: 1
+redstoneb: 1
+redstonem: 1
+carvaob: 1
+carvaom: 1
+diamanteb: 1
+diamantem: 1
+esmeraldab: 1
+esmeraldam: 1
+ferro: 1
+magma: 1
+blaze: 1
+polvora: 1
+string: 1
+trigo: 1
+cacau: 1
+melancia: 1
+abobora: 1
+cana: 1
+fungo: 1

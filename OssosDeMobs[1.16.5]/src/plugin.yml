@@ -1,0 +1,6 @@
+name: OssosDeMobs
+version: 1.0
+author: Ninjay_
+main: me.ninjay.ossosmobs.main.Main
+commands:
+  daritens:

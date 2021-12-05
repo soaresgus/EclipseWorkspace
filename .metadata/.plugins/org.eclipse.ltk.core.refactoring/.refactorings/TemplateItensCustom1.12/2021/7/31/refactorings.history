@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ItensAPI.java&apos; to &apos;GeleiaCriatvo[1.17]/src/me.ninjay.geleiacriativo.estruturas&apos;&#x0D;&#x0A;- Original project: &apos;TemplateItensCustom1.12&apos;&#x0D;&#x0A;- Destination element: &apos;GeleiaCriatvo[1.17]/src/me.ninjay.geleiacriativo.estruturas&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.template.estruturas.ItensAPI.java&apos;" description="Copy compilation unit" destination="=GeleiaCriatvo\[1.17\]/src&lt;me.ninjay.geleiacriativo.estruturas" element1="/src&lt;me.ninjay.template.estruturas{ItensAPI.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1627260886808" units="1" version="1.0"/>
+</session>

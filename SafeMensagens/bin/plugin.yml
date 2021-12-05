@@ -1,0 +1,9 @@
+name: SafeMensagens
+version: 3.0
+author: MyNameIsNinjay
+main: me.ninjay.safemensagens.main.Main
+commands:
+  novidade:
+   aliases: [novidades]
+  correio:
+   aliases: [email]

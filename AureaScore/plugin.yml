@@ -1,0 +1,5 @@
+name: AureaScore
+version: 1.0
+author: Ninjay_
+main: me.ninjay.aureascore.Main
+commands:

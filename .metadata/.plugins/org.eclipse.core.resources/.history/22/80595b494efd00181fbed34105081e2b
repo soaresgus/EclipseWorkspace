@@ -1,0 +1,7 @@
+package me.ninjay.upsoulth.captcha;
+
+import org.bukkit.event.Listener;
+
+public class EventosCaptcha implements Listener {
+	
+}

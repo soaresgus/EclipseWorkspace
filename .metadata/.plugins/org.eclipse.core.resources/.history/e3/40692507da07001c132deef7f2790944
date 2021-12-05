@@ -1,0 +1,48 @@
+package me.ninjay.template.comandos;
+
+import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.scoreboard.Criterias;
+import org.bukkit.scoreboard.DisplaySlot;
+import org.bukkit.scoreboard.Objective;
+import org.bukkit.scoreboard.Scoreboard;
+import org.bukkit.scoreboard.Team;
+
+import me.ninjay.template.utils.DisplayBoard;
+import me.ninjay.template.utils.Mine;
+
+public class ComandoTemplate implements CommandExecutor{
+	
+	public DisplayBoard init() {
+//		Mine.broadcast("§cinit executado"
+//				+ "");
+		Scoreboard scoreboard = Bukkit.getScoreboardManager().getNewScoreboard();
+		Objective objective = scoreboard.registerNewObjective("sc"+Mine.getRandomInt(1000, 100000), "dummy");
+		objective.setDisplaySlot(DisplaySlot.SIDEBAR);
+		Objective health = scoreboard.registerNewObjective("HealthBar", Criterias.HEALTH);
+		health.setDisplaySlot(DisplaySlot.BELOW_NAME);
+		for (int id = 15; id > 0; id--) {
+			Team team = scoreboard.registerNewTeam("t" + +Mine.getRandomInt(1000, 100000));
+//			FakePlayer fake = new FakePlayer("" + ChatColor.values()[id]);
+//			team.addPlayer(fake);
+//			objective.getScore(fake).setScore(id);
+//			fakes.put(id, fake);
+		}
+		setDisplay("teste");
+		setHealthBar("teste");
+		return this;
+	}
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String lb, String[] args) {
+		if(sender instanceof Player) {
+			Player p = (Player)sender;
+			
+		}
+		return false;
+	}
+
+}

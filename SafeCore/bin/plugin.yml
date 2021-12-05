@@ -1,0 +1,43 @@
+name: SafeCore
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.safecore.main.Main
+commands:
+  g:
+   aliases: [global]
+  l:
+   aliases: [local]
+  clearchat:
+   aliases: [limparchat,cc]
+  toggleglobal:
+  aviso:
+   aliases: [anuncio,recado,avisar,alerta]
+  tell:
+   aliases: [mensagem,privado,private]
+  r:
+  ping:
+  lag:
+   aliases: [lagg,antlag,antilag]
+  cargo:
+   aliases: [cargos,grupo]
+  kit:
+  tempoonline:
+   aliases: [tempoon]
+  skills:
+   aliases: [skill,stats,habilidades,habilidade]
+  espadas:
+   aliases: [sword,espada,swords]
+  machado:
+   aliases: [axe]
+  mineracao:
+   aliases: [mining]
+  escavacao:
+   aliases: [excavation]
+  acrobacia:
+   aliases: [acrobatic]
+  feiticeiro:
+   aliases: [wizard]
+  spawn:
+  setspawn:
+  vip:
+  setarmob:

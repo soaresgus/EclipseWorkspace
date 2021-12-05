@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;me.ninjay.random.comandos.ComandoBolão&apos; to &apos;ComandoBolao&apos;&#x0D;&#x0A;- Original project: &apos;NinjaRandom&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.random.comandos.ComandoBolão&apos;&#x0D;&#x0A;- Renamed element: &apos;me.ninjay.random.comandos.ComandoBolao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ComandoBolão&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;me.ninjay.random.comandos{ComandoBolão.java[ComandoBolão" matchStrategy="1" name="ComandoBolao" qualified="false" references="true" similarDeclarations="false" stamp="1543426224678" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,7 @@
+name: NinjaCaixas
+version: 1.0
+author: MyNameIsNinjay
+depend: [NinjaUtils]
+main: me.ninjay.onecaixas.main.Main
+commands:
+  comprarcaixa:

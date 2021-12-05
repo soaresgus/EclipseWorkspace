@@ -1,0 +1,30 @@
+package me.ninjay.oneinfo.comandos;
+
+import java.text.DecimalFormat;
+
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+import me.ninjay.oneinfo.estruturas.StatsAPI;
+import me.ninjay.oneinfo.main.Main;
+
+
+public class ComandoInfo implements CommandExecutor{
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String lb, String[] args) {
+		if(sender instanceof Player) {
+			Player p = (Player)sender;
+		    StatsAPI.setKills(p, Main.kdr,(long) 1399);
+		    StatsAPI.setMortes(p, Main.kdr, (long) 3);
+		    
+
+		    p.sendMessage("fé em deus "+df.format(StatsAPI.getKdr(p, Main.kdr)));
+		}
+		return false;
+	}
+}
+			
+

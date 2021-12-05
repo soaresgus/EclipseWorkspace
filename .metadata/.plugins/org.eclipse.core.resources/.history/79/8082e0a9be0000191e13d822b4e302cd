@@ -1,0 +1,21 @@
+package me.ninjay.oneperfil.ranks;
+
+import me.ninjay.oneperfil.main.Main;
+import net.eduard.api.lib.BukkitConfig;
+
+public class RankUpAPI {
+
+	public static BukkitConfig config = new BukkitConfig("ranks.yml", Main.getPlugin(Main.class));
+	public static RankUpManager manager;
+	
+	public static void reload() {
+		config.reloadConfig();
+		if(config.contains("ranks")) {
+			manager = (RankUpManager) config.get("ranks");
+		}else {
+			manager = new RankUpManager();
+			RankUp um = new RankUp();
+		}
+	}
+	
+}

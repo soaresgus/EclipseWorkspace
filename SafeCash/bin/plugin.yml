@@ -1,0 +1,8 @@
+name: SafeCash
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.safecash.main.Main
+commands:
+  cash:
+  shop:
+  tempovip:

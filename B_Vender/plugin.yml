@@ -1,0 +1,7 @@
+name: B_Vender
+authors: [BaconCodes]
+version: 1.0
+main: net.b_vender.Main
+commands:
+  vender:
+    aliases: [sell]

@@ -1,0 +1,15 @@
+name: NinjaKitPvP
+version: 1.0
+author: Ninjay_
+main: me.ninjay.ninjakitpvp.main.Main
+commands:
+  set:
+  spawn:
+  build:
+  reloadconfig:
+  fly:
+  warps:
+  info:
+  coins:
+    aliases: [cash,coin]
+  

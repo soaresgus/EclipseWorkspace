@@ -1,0 +1,7 @@
+name: RedeOneMsg
+version: 1.0
+author: Ninjay_
+depend: [CursoAPI]
+main: me.ninjay.oneautomsg.main.Main
+commands:
+  template:

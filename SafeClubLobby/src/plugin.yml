@@ -1,0 +1,11 @@
+name: SafeClubLobby
+version: 1.0
+author: Ninjay_
+main: me.ninjay.safeclublobby.main.Main
+commands:
+  login:
+  register:
+  trocarsenha:
+  conectar:
+  setspawn:
+   

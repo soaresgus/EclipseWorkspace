@@ -1,0 +1,6 @@
+name: NinjaTimer
+version: 1.0
+author: Ninjay_
+main: me.ninjay.timer.Main
+commands:
+  timer:

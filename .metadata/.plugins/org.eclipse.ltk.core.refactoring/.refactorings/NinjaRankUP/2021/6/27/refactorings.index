@@ -1,0 +1,14 @@
+1624893120240	Rename package 'me.ninjay.template'
+1624893227112	Delete element
+1624893229016	Delete element
+1624911367152	Move compilation units
+1624911375783	Move compilation units
+1624918460335	Delete element
+1624918636847	Encapsulate field 'perm'
+1624918685997	Encapsulate field 'comando'
+1624918689294	Encapsulate field 'itens'
+1624919244018	Encapsulate field 'inicial'
+1625066802147	Delete element
+1625067193364	Encapsulate field 'grupo'
+1625068096158	Rename type 'ComandoRankl'
+1625068985725	Encapsulate field 'tag'

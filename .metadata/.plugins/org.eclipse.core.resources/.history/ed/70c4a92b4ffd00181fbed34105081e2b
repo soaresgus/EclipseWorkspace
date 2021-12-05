@@ -1,0 +1,47 @@
+package me.ninjay.upsoulth.captcha;
+
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.inventory.ItemStack;
+
+import me.ninjay.upsoulth.main.Main;
+import net.eduard.api.lib.Mine;
+
+public class EventosCaptcha implements Listener {
+
+	@EventHandler
+	public void aoEntrar(PlayerJoinEvent e) {
+		Player p = e.getPlayer();
+		Main.dentro.add(p);
+		if (Main.dentro.contains(p)) {
+			EstruturaGlobal.abrir(p);
+		}
+
+	}
+	@EventHandler
+	public void aoCliclarLivro(InventoryClickEvent e) {
+		Player p = (Player) e.getWhoClicked();
+		if(e.getInventory().getTitle().equals("Clique no livro")) {
+			e.setCancelled(true);
+			ItemStack livro = Mine.newItem(Material.BOOK, "§eClique no correto");
+						if(e.getCurrentItem().isSimilar(livro)) {
+				p.getOpenInventory().close();
+				p.sendMessage("§a§lCAPTCHA §aConfirmado, tenha um bom jogo.");
+				Main.dentro.remove(p);
+			}
+		}
+		ItemStack peixe = Mine.newItem(Material.RAW_FISH, "§eClique no correto");
+		ItemStack esmeralda = Mine.newItem(Material.EMERALD, "§eClique no correto");
+
+		if(e.getCurrentItem().isSimilar(peixe)) {
+			p.kickPlayer("§cVocê errou o captcha");
+			
+		}
+		
+	}
+	
+}

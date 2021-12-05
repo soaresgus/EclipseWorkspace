@@ -1,0 +1,15 @@
+name: RedeOneWarps
+version: 1.0
+author: MyNameIsNinjay
+depend: [CursoAPI]
+main: me.ninjay.onewarps.main.Main
+commands:
+  spawn:
+  loja:
+  mina:
+  arena:
+  setarena:
+  setspawn:
+  setloja:
+  setmina:
+  

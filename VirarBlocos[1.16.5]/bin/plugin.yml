@@ -1,0 +1,7 @@
+name: VirarBlocos
+version: 1.0
+author: Ninjay_
+main: me.ninjay.virarblocos.main.Main
+api-version: 1.16
+commands:
+  daritens:

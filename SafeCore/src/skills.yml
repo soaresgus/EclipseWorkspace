@@ -1,0 +1,53 @@
+XpAumentadoCadaUp: 100
+
+sword:
+  NvlMax: 100
+  NvlMed: 50
+  XpPlayer: 5
+  XpInicial: 1000
+  SangramentoCooldown: 300
+  TempoUsoSangramento: 30
+  ContraAtaqueCooldown: 300
+  
+axe:
+  NvlMax: 100
+  NvlMed: 50
+  XpPlayer: 5
+  XpInicial: 1000
+  KnockCooldown: 300
+  RaioCooldown: 300
+  
+mining:
+  NvlMax: 100
+  NvlMed: 50
+  XpInicial: 1000
+  XpPedra: 1
+  XpMinerio: 5
+  
+excavation:
+  NvlMax: 100
+  NvlMed: 50
+  XpAreia: 5
+  XpTerra: 3
+  XpGravel: 8
+  XpInicial: 1000
+  
+acrobatic:
+  NvlMax: 100
+  NvlMed: 50
+  XpAlturaAlta: 30
+  XpAlturaMedia: 20
+  XpAlturaBaixa: 10
+  XpComPesoPena: 20
+  XpInicial: 1000
+  Rolamento50: 0.10
+  Rolamento100: 0.25
+  
+wizard:
+  NvlMax: 100
+  NvlMed: 50
+  XpPot: 50 
+  XpInicial: 1000
+  FlashbangCooldown: 1800
+  CanseiraCooldown: 1800
+  

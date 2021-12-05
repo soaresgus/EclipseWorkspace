@@ -1,0 +1,17 @@
+package me.ninjay.megataymaquinas.estruturas;
+
+import org.bukkit.inventory.ItemStack;
+
+import me.ninjay.megataymaquinas.utils.Storable;
+import me.ninjay.megataymaquinas.utils.StorageAttributes;
+
+@StorageAttributes(indentificate=true)
+public class Maquina implements Storable{
+	
+	private String nome;
+	private ItemStack icone;
+	
+ 
+	
+	
+}

@@ -1,0 +1,45 @@
+package me.ninjay.oneperfil.ranks;
+
+import org.bukkit.Material;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+
+import net.eduard.api.lib.Mine;
+
+public class ComandoRankUp implements CommandExecutor {
+
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String lb, String[] args) {
+		if (sender instanceof Player) {
+			Player p = (Player) sender;
+			Inventory rank1i = Mine.newInventory("Rank [1]", 9 * 3);
+			Inventory rank2i = Mine.newInventory("Rank [2]", 9 * 3);
+			Inventory rank3i = Mine.newInventory("Rank [3]", 9 * 3);
+			Inventory rank4i = Mine.newInventory("Rank [4]", 9 * 3);
+			Inventory rank5i = Mine.newInventory("Rank [5]", 9 * 3);
+			Inventory rank6i = Mine.newInventory("Rank [6]", 9 * 3);
+			Inventory rank7i = Mine.newInventory("Rank [7]", 9 * 3);
+			Inventory rank8i = Mine.newInventory("Rank [8]", 9 * 3);
+			Inventory rank9i = Mine.newInventory("Rank [9]", 9 * 3);
+			Inventory rank10i = Mine.newInventory("Rank [10]", 9 * 3);
+			
+			ItemStack um = Mine.newItem("§6Rank [1]", Material.COAL, 1, 0, "§6Requisitos: §e[10.000 Blocos]");
+			ItemStack dois = Mine.newItem("§6Rank [2]", Material.COAL_ORE, 2, 0, "§6Requisitos: §e[300.000 Coins]");
+			ItemStack tres = Mine.newItem("§6Rank [3]", Material.COAL_BLOCK, 3, 0, "§6Requisitos: §e[12 Horas online]");
+			ItemStack quatro = Mine.newItem("§6Rank [4]", Material.IRON_INGOT, 1, 0, "§6Requisitos: §e[150 Almas]");
+			ItemStack cinco = Mine.newItem("§6Rank [5]", Material.IRON_ORE, 2, 0, "§6Requisitos: §e[20 Horas online]");
+			ItemStack seis = Mine.newItem("§6Rank [6]", Material.IRON_BLOCK, 3, 0, "§6Requisitos: §e[250 Almas]");
+			ItemStack sete = Mine.newItem("§6Rank [7]", Material.GOLD_INGOT, 1, 0, "§6Requisitos: §e[1.000.000 Coins]");
+			ItemStack oito = Mine.newItem("§6Rank [8]", Material.GOLD_ORE, 2, 0, "§6Requisitos: §e[50 Horas online]");
+			ItemStack nove = Mine.newItem("§6Rank [9]", Material.GOLD_BLOCK, 3, 0, "§6Requisitos: §e[500 Almas]");
+			ItemStack dez = Mine.newItem("§6Rank [10]", Material.DIAMOND, 1, 0,
+					"§6Requisitos: §e[Ter 5 vitórias totais em eventos]");
+		}
+		return false;
+	}
+
+}

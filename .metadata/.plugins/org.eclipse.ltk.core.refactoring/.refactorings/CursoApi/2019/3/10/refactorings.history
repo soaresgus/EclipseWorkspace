@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BungeeConfig.java&apos; to &apos;_Template/src/me.ninjay.template.utils&apos;&#x0D;&#x0A;- Original project: &apos;CursoAPI&apos;&#x0D;&#x0A;- Destination element: &apos;_Template/src/me.ninjay.template.utils&apos;&#x0D;&#x0A;- Original element: &apos;net.eduard.api.lib.BungeeConfig.java&apos;" description="Copy compilation unit" destination="=_Template/src&lt;me.ninjay.template.utils" element1="/src&lt;net.eduard.api.lib{BungeeConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1551852300331" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,17 @@
+package me.ninjay.ninjacxc.estruturas;
+
+import org.bukkit.Sound;
+import org.bukkit.entity.Player;
+
+import net.eduard.api.lib.BukkitConfig;
+import net.eduard.api.lib.Mine;
+
+public class LiderAPI {
+	
+	public static void setLider(Player p, BukkitConfig config) {
+		p.sendMessage("§aVocê virou líder da sala. Agora você poderá fazer as seguintes coisas:\n \n✦ Mudar os paramêtros da sala no pré-game. (Tempo, kit, etc...)\n✦ Administrar a sala no pré-game.\n ");
+		p.getWorld().playSound(p.getLocation(), Sound.LEVEL_UP, 1F, 1F);
+		p.getInventory().setItem(Mine.getPosition(1, 5), );
+	}
+
+}

@@ -1,0 +1,5 @@
+name: NinjaMagic
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.magic.Main
+commands:

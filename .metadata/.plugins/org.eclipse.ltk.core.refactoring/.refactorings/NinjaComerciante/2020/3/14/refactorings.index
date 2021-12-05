@@ -1,0 +1,15 @@
+1585578587573	Rename package 'me.ninjay.template'
+1585578648487	Rename type 'ComandoTemplate'
+1585578654322	Rename type 'EventosTemplate'
+1585578674436	Rename type 'ComercianteAPI'
+1585586135524	Encapsulate field 'valor'
+1585586172569	Delete element
+1585586179220	Rename type 'ItensControler'
+1585588349659	Encapsulate field 'ativado'
+1585593296714	Delete element
+1585594095405	Delete element
+1585650182761	Delete element
+1585650560458	Copy compilation unit
+1585650591816	Delete element
+1585659290762	Encapsulate field 'icone'
+1585660636264	Delete element

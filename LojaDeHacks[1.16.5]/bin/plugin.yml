@@ -1,0 +1,7 @@
+name: LojaDeHacks
+version: 1.0
+author: Ninjay_
+main: me.ninjay.lojahacks.main.Main
+commands:
+  daritens:
+  clearhack:

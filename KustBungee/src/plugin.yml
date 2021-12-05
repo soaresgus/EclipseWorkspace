@@ -1,0 +1,6 @@
+name: KustBungee
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustbungee.main.Main
+commands:
+  lobby:

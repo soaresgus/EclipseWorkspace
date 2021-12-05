@@ -1,0 +1,6 @@
+name: AureaMaquinas
+version: 1.0
+author: Ninjay_
+main: me.ninjay.maquina.Main
+commands:
+ givemaquina:

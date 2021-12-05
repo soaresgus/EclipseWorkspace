@@ -1,0 +1,7 @@
+name: KustManutencao
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustmanutencao.main.Main
+commands:
+  manutencao:
+  reiniciar:

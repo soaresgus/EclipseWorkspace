@@ -1,0 +1,15 @@
+name: KustEventos
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kusteventos.main.Main
+commands:
+  eventos:
+   aliases: [evento]
+  baseperdida:
+   aliases: [bp]
+  loteria:
+  bolao:
+   aliases: [bolão]
+  palavra:
+  sorteio:
+  guerra:

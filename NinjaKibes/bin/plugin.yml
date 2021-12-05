@@ -1,0 +1,6 @@
+name: NinjaKibes
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.ninjakibes.main.Main
+commands:
+  dar:

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ComandoPing.java&apos; to &apos;SafeClubBungee/src/me.ninjay.safeclubbungee&apos;&#x0D;&#x0A;- Original project: &apos;CursoBungee&apos;&#x0D;&#x0A;- Destination element: &apos;SafeClubBungee/src/me.ninjay.safeclubbungee&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.bungee.ComandoPing.java&apos;" description="Copy compilation unit" destination="=SafeClubBungee/src&lt;me.ninjay.safeclubbungee" element1="/src&lt;me.ninjay.bungee{ComandoPing.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1550591809643" units="1" version="1.0"/>
+</session>

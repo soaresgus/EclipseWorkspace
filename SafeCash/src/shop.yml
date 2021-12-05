@@ -1,0 +1,16 @@
+vip:
+  valor: 30
+  vantagens:
+    1: '§7Acesso à /vip.'
+    2: '§7spawner teste'
+    3: '§7123'
+  vamount: 3
+mvp:
+  valor: 50
+  vantagens:
+    1: '§7Acesso à /vip.'
+    2: '§7doido né?'
+    3: '§712345'
+    4: '§7jott'
+    5: '§7teste'
+  vamount: 5

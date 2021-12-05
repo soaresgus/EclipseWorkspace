@@ -1,0 +1,6 @@
+name: ConfigTeste
+version: 1.0
+main: me.ninjay.peipei.Main
+depend: [CursoAPI]
+commands:
+ comando:

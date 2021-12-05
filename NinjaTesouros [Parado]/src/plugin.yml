@@ -1,0 +1,7 @@
+name: NinjaTesouros
+version: 1.0
+author: Ninjay_
+main: me.ninjay.ninjatesouros.main.Main
+depend: [NinjaUtils]
+commands:
+  tesouro:

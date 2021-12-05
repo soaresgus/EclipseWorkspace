@@ -1,0 +1,50 @@
+package me.ninjay.oneperfil.eventos;
+
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.block.BlockBreakEvent;
+
+import me.ninjay.oneperfil.estruturas.BlocosAPI;
+import me.ninjay.oneperfil.main.Main;
+
+public class EventosInfo implements Listener{
+	
+	@EventHandler
+	public void Blocos(BlockBreakEvent e) {
+		Player p = e.getPlayer();
+		if(e.getBlock().getType() == Material.LAPIS_ORE) {
+			BlocosAPI.addBlocos(p, Main.blocos, (long) 1);
+		}
+		if(e.getBlock().getType() == Material.LAPIS_BLOCK) {
+			BlocosAPI.addBlocos(p, Main.blocos, (long) 1);
+		}
+		if(e.getBlock().getType() == Material.REDSTONE_ORE) {
+			BlocosAPI.addBlocos(p, Main.blocos, (long) 1);
+		}
+		if(e.getBlock().getType() == Material.REDSTONE_BLOCK) {
+			BlocosAPI.addBlocos(p, Main.blocos, (long) 1);
+		}
+		if(e.getBlock().getType() == Material.DIAMOND_ORE) {
+			BlocosAPI.addBlocos(p, Main.blocos, (long) 1);
+		}
+		if(e.getBlock().getType() == Material.REDSTONE_BLOCK) {
+			BlocosAPI.addBlocos(p, Main.blocos, (long) 1);
+		}
+		if(e.getBlock().getType() == Material.EMERALD_ORE) {
+			BlocosAPI.addBlocos(p, Main.blocos, (long) 1);
+		}
+		if(e.getBlock().getType() == Material.EMERALD_BLOCK) {
+			BlocosAPI.addBlocos(p, Main.blocos, (long) 1);
+		}
+		if(e.getBlock().getType() == Material.IRON_ORE) {
+			BlocosAPI.addBlocos(p, Main.blocos, (long) 1);
+		}
+		if(e.getBlock().getType() == Material.IRON_BLOCK) {
+			BlocosAPI.addBlocos(p, Main.blocos, (long) 1);
+		}
+	}
+	
+
+}

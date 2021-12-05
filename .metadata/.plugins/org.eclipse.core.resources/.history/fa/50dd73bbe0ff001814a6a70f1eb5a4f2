@@ -1,0 +1,34 @@
+package me.ninjay.oneperfil.ranks;
+
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+
+import net.eduard.api.lib.Mine;
+
+public class ComandoRankUp implements CommandExecutor{
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String lb, String[] args) {
+		if(sender instanceof Player) {
+			Player p = (Player) sender;
+			Inventory cold3i = Mine.newInventory("Cold III", 9*3);
+			Inventory cold2i = Mine.newInventory("Cold II", 9*3);
+			Inventory cold1i = Mine.newInventory("Cold I", 9*3);
+			
+			Inventory dark3i = Mine.newInventory("Dark III", 9*3);
+			Inventory dark2i = Mine.newInventory("Dark II", 9*3);
+			Inventory dark1i = Mine.newInventory("Dark I", 9*3);
+			
+			Inventory flight3i = Mine.newInventory("Flight III", 9*3);
+			Inventory flight2i = Mine.newInventory("Flight II", 9*3);
+			Inventory flight1i = Mine.newInventory("Flight I", 9*3);
+			
+			Inventory souls3i = Mine.newInventory("Souls III", 9*3);
+		}
+		return false;
+	}
+
+}

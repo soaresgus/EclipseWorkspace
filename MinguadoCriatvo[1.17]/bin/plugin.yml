@@ -1,0 +1,7 @@
+name: MinguadoCriativo
+version: 1.0
+author: Ninjay_
+main: me.ninjay.minguadocriativo.main.Main
+api-version: 1.17
+commands:
+  daritens:

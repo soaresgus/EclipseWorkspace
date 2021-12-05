@@ -1,0 +1,7 @@
+name: MineriosYoutubers
+version: 1.0
+author: Ninjay_
+main: me.ninjay.mineriosyoutubers.main.Main
+api-version: 1.16
+commands:
+  daritens:

@@ -1,0 +1,8 @@
+name: KustWatchDog
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustwatchdog.main.Main
+commands:
+  killaura:
+  autoclick:
+  

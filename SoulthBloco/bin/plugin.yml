@@ -1,0 +1,6 @@
+name: SoulthBloco
+version: 1.0
+author: MyNameIsNinjay
+depend: [CursoAPI]
+main: me.ninjay.soulthbloco.main.Main
+commands:

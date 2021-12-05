@@ -1,0 +1,34 @@
+package me.ninjay.oneperfil.tabscore.eventos;
+
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.scheduler.BukkitRunnable;
+
+import me.ninjay.onewarps.main.Main;
+import net.eduard.api.lib.Mine;
+
+public class EventosTabScore implements Listener{
+	@EventHandler
+	public void aoEntrar(PlayerJoinEvent e) {
+		Player p = e.getPlayer();
+		SimplesScore.setScore(p);
+		Mine.setTabList(p, "\n §6§lREDE ONE\n§e"+p.getServer().getIp()+"\n ","\n§6Discord: §ediscord.me/redeone\n§6Twitter: §etwitter.com/ServidoresOne\n \n     §6Adquira §evip §6e §ecash §6em nossa loja: §eloja.rede-one.com     \n ");
+	    p.teleport(Main.locais.getLocation("spawn"));
+		new BukkitRunnable() {
+			
+			@Override
+			public void run() {
+				for(int d = 0; d < 150; d++) {
+			    	p.sendMessage(" ");		
+			}
+				 p.sendMessage("§6Bem vindo ao servidor §e"+p.getName()+"§6 !");
+				 
+			}
+		}.runTaskLater(Main.getPlugin(Main.class), 5);
+		
+	   
+	}
+
+}

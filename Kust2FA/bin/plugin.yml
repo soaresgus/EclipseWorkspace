@@ -1,0 +1,8 @@
+name: Kust2FA
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kust2fa.main.Main
+commands:
+  autentificar:
+   aliases: [pin]
+  stafflist:

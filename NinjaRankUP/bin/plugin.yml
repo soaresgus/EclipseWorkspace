@@ -1,0 +1,9 @@
+name: NinjaRankUP
+version: 1.0
+author: Ninjay_
+main: me.ninjay.ninjarankup.main.Main
+commands:
+  rank:
+  rankup:
+  ranks:
+  rankadmin:

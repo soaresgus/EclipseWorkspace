@@ -1,0 +1,49 @@
+#mina.vip
+#mina.admin
+
+coal:
+  chance: 0.50
+  chancevip: 0.60
+  valorvip: 1.10
+  fortune1: 2
+  fortune2: 4
+  fortune3: 8
+iron:
+  chance: 0.40
+  chancevip: 0.50
+  valorvip: 2.30
+lapiz:
+  chance: 0.60
+  chancevip: 0.70
+  valorvip: 1.20
+  fortune1: 2
+  fortune2: 4
+  fortune3: 8
+redstone:
+  chance: 0.60
+  chancevip: 0.70
+  valorvip: 1.30
+  fortune1: 2
+  fortune2: 4
+  fortune3: 8
+gold:
+  chance: 0.30
+  chancevip: 0.40
+diamond:
+  chance: 0.30
+  chancevip: 0.40
+  fortune1: 2
+  fortune2: 4
+  fortune3: 8
+
+palavras: 5
+1: casa
+2: luiz
+3: capacete
+4: lanterna
+5: monitor
+
+
+ 
+
+

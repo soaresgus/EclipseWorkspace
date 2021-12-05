@@ -1,0 +1,42 @@
+package me.ninjay.oneperfil.ranks;
+
+import me.ninjay.oneperfil.main.Main;
+import net.eduard.api.lib.BukkitConfig;
+
+public class RankUpAPI {
+
+	public static BukkitConfig config = new BukkitConfig("ranks.yml", Main.getPlugin(Main.class));
+	public static RankUpManager manager;
+	
+	public static void reload() {
+		config.reloadConfig();
+		if(config.contains("ranks")) {
+			manager = (RankUpManager) config.get("ranks");
+		}else {
+			manager = new RankUpManager();
+			
+			RankUp um = new RankUp();
+			RankUp dois = new RankUp();
+			RankUp tres = new RankUp();
+			RankUp quatro = new RankUp();
+			RankUp cinco = new RankUp();
+			RankUp seis = new RankUp();
+			RankUp sete = new RankUp();
+			RankUp oito = new RankUp();
+			RankUp nove = new RankUp();
+			RankUp dez = new RankUp();
+			
+			um.setNome("Rank [1]");
+			dois.setNome("Rank [2]");
+			tres.setNome("Rank [3]");
+			quatro.setNome("Rank [4]");
+			cinco.setNome("Rank [5]");
+			seis.setNome("Rank [6]");
+			sete.setNome("Rank [7]");
+			oito.setNome("Rank [8]");
+			nove.setNome("Rank [9]");
+			dez.setNome("Rank [10]");
+		}
+	}
+	
+}

@@ -1,0 +1,12 @@
+name: NinjaAntiAbuso
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.antiabuso.main.Main
+commands:
+  modreq:
+  report:
+    aliases: [reportar,denunciar]
+  reports:
+    aliases: [denuncias]
+  teleportar:
+    aliases: [teleporte,teleport]

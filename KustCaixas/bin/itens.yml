@@ -1,0 +1,29 @@
+#0 - Protection, 2 - Peso pena, 8 - Depth strider, 16 - Sharpness, 20 - Fire Aspect, 21 - Looting
+#32 - Eficiencia, 33 - Silk Touch, 35 - Fortuna, 48 - Power, 49 - Punch, 50 - Flame, 51 - Infinity
+#34 - Unbreaking
+Itens:
+  1:
+   id: 276
+   nome: null
+   amount: 1
+   data: 0
+   caixa: basica
+   chance: 0.30
+   comando: null
+   raridade: 1
+  Enchants:
+   1:
+    0: 0
+    2: 0
+    8: 0
+    16: 5
+    20: 0
+    21: 0
+    32: 0
+    33: 0
+    35: 0
+    48: 0
+    49: 0
+    50: 0
+    51: 0
+    34: 3

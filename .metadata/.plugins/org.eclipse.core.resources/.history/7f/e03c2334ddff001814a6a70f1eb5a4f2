@@ -1,0 +1,79 @@
+package me.ninjay.oneperfil.ranks;
+
+import org.bukkit.Material;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+
+import net.eduard.api.lib.Mine;
+
+public class ComandoRanks implements CommandExecutor {
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String lb, String[] args) {
+		if(sender instanceof Player) {
+			Player p = (Player) sender;
+			Inventory ranks = Mine.newInventory("Ranks 01", 9*5);
+			Inventory ranks2 = Mine.newInventory("Ranks 02", 9*5);
+			
+			ItemStack cold3 = Mine.newItem("§eCold III", Material.COAL, 1, 0, "§fValor: §a$12.5K","§fBlocos: 30.000");
+			ItemStack cold2 = Mine.newItem("§eCold II", Material.COAL, 2, 0, "§fValor: §a$21.87K","§fBlocos: 35.000");
+			ItemStack cold1 = Mine.newItem("§eCold I", Material.COAL, 3, 0, "§fValor: §a$38.28K","§fBlocos: 40.000");
+			
+			ItemStack dark3 = Mine.newItem("§eDark III", Material.RED_MUSHROOM, 1, 0, "§fValor: §a$66.99K","§fBlocos: 45.000");
+			ItemStack dark2 = Mine.newItem("§eDark II", Material.RED_MUSHROOM, 2, 0, "§fValor: §a$117.21K","§fBlocos: 50.000");
+			ItemStack dark1 = Mine.newItem("§eDark I", Material.RED_MUSHROOM, 3, 0, "§fValor: §a$215.11K","§fBlocos: 55.000");
+			
+			ItemStack flight3 = Mine.newItem("§eFlight III", Material.SUGAR, 1, 0, "§fValor: §a$359K","§fBlocos: 60.000");
+			ItemStack flight2 = Mine.newItem("§eFlight II", Material.SUGAR, 2, 0, "§fValor: §a$628.21K","§fBlocos: 65.000");
+			ItemStack flight1 = Mine.newItem("§eFlight I", Material.SUGAR, 3, 0, "§fValor: §a$1.199M","§fBlocos: 70.000");
+			
+			ItemStack souls3 = Mine.newItem("§eSouls III", Material.GOLD_NUGGET, 1, 0, "§fValor: §a$1.924M","§fBlocos: 75.000");
+			
+			
+			ranks.setItem(Mine.getPosition(2, 3), cold3);
+			ranks.setItem(Mine.getPosition(3, 3), cold2);
+			ranks.setItem(Mine.getPosition(4, 3), cold1);
+			
+			ranks.setItem(Mine.getPosition(2, 4), dark3);
+			ranks.setItem(Mine.getPosition(3, 4), dark2);
+			ranks.setItem(Mine.getPosition(4, 4), dark1);
+			
+			ranks.setItem(Mine.getPosition(2, 5), flight3);
+			ranks.setItem(Mine.getPosition(3, 5), flight2);
+			ranks.setItem(Mine.getPosition(4, 5), flight1);
+			
+			ranks.setItem(Mine.getPosition(2, 6), souls3);
+			ranks.setItem(Mine.getPosition(3, 6), souls2);
+			ranks.setItem(Mine.getPosition(4, 6), souls1);
+			
+			ranks.setItem(Mine.getPosition(2, 7), killer3);
+			ranks.setItem(Mine.getPosition(3, 7), killer2);
+			ranks.setItem(Mine.getPosition(4, 7), killer1);
+			
+			ranks.setItem(Mine.getPosition(3, 8), frente);
+			
+			ranks2.setItem(Mine.getPosition(2, 3), demo3);
+			ranks2.setItem(Mine.getPosition(3, 3), demo2);
+			ranks2.setItem(Mine.getPosition(4, 3), demo1);
+
+			ranks2.setItem(Mine.getPosition(2, 4), dingy3);
+			ranks2.setItem(Mine.getPosition(3, 4), dingy2);
+			ranks2.setItem(Mine.getPosition(4, 4), dingy1);
+			
+			ranks2.setItem(Mine.getPosition(5, 5), omega3);
+			ranks2.setItem(Mine.getPosition(5, 5), omega2);
+			ranks2.setItem(Mine.getPosition(5, 5), omega1);
+			
+			ranks2.setItem(Mine.getPosition(3, 2), tras);
+			
+			p.openInventory(ranks);
+			
+		}
+		return false;
+	}
+
+}

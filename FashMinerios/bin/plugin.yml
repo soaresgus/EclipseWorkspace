@@ -1,0 +1,6 @@
+name: FashMinerios
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.fashmining.main.Main
+commands:
+  minerios:

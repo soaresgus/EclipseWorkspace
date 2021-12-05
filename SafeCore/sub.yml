@@ -1,0 +1,6 @@
+if (e.getSpawner().getLocation().getChunk() == locmob.get(EntityType.WITHER).getChunk()) {
+			if (e.getEntity().getType() == EntityType.WITHER) {
+				e.getEntity().teleport(locmob.get(EntityType.WITHER));
+				Mine.disableAI(e.getEntity());
+			}
+		}

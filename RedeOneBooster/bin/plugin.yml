@@ -1,0 +1,8 @@
+name: RedeOneBooster
+version: 1.0
+author: MyNameIsNinjay
+depend: [CursoAPI]
+main: me.ninjay.onebooster.main.Main
+commands:
+  darbooster:
+  comprabooster:

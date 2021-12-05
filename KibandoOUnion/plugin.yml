@@ -1,0 +1,6 @@
+name: UnionScore
+main: net.yaquilesbr.Main
+version: 3.0
+author: yAquilesBr
+commands:
+   .:

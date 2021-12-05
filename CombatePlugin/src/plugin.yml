@@ -1,0 +1,5 @@
+name: CombatePlguin
+version: 1.0
+author: Ninjay_
+main: me.ninjay.combatepl.main.Main
+commands:

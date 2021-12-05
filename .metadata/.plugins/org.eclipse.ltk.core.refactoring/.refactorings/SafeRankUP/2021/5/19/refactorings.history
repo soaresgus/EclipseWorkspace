@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SimplesScore.java&apos; to &apos;KustScoreboard/src/me.ninjay.kustscoreboard.estruturas&apos;&#x0D;&#x0A;- Original project: &apos;SafeRankUP&apos;&#x0D;&#x0A;- Destination element: &apos;KustScoreboard/src/me.ninjay.kustscoreboard.estruturas&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.saferankup.estruturas.SimplesScore.java&apos;" description="Copy compilation unit" destination="=KustScoreboard/src&lt;me.ninjay.kustscoreboard.estruturas" element1="/src&lt;me.ninjay.saferankup.estruturas{SimplesScore.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1620125312596" units="1" version="1.0"/>
+</session>

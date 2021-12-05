@@ -1,0 +1,5 @@
+1633101517677	Rename package 'me.ninjay.template'
+1633101540735	Rename type 'EventosTemplate'
+1633103261511	Rename type 'ComandoTemplate'
+1633103297229	Rename type 'Minerios'
+1633103637267	Encapsulate field 'minerios'

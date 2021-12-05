@@ -1,0 +1,6 @@
+name: Fragmentos
+version: 1000.0
+author: Ninjay_
+main: me.ninjay.fragbase.Main
+commands:
+ loja:

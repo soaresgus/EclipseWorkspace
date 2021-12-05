@@ -1,0 +1,18 @@
+name: ZeyLobby
+main: Zey.Lobby.Main.Main
+author: OwZey
+version: 1.0
+commands:
+  spawnapostas:
+  build:
+  cc:
+  chat:
+  darcoins:
+  fly:
+  gm:
+  ping:
+  tag:
+  server:
+   aliases: [connect]
+  setgroup:
+  setvip:

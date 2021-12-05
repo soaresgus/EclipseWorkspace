@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BungeeChannelApi.java&apos; to &apos;KustLobby/src/me.ninjay.kustlobby.estruturas&apos;&#x0D;&#x0A;- Original project: &apos;BungeeChannelApi&apos;&#x0D;&#x0A;- Destination element: &apos;KustLobby/src/me.ninjay.kustlobby.estruturas&apos;&#x0D;&#x0A;- Original element: &apos;io.github.leonardosnt.bungeechannelapi.BungeeChannelApi.java&apos;" description="Copy compilation unit" destination="=KustLobby/src&lt;me.ninjay.kustlobby.estruturas" element1="/src\/main\/java&lt;io.github.leonardosnt.bungeechannelapi{BungeeChannelApi.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1617550866431" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,5 @@
+name: KustScoreboard
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustscoreboard.main.Main
+commands:

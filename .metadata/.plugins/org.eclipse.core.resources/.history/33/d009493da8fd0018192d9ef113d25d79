@@ -1,0 +1,74 @@
+package me.ninjay.oneinfo.mvp.comandos;
+
+import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+import me.ninjay.oneinfo.main.Main;
+import me.ninjay.oneinfo.mvp.estruturas.EstruturaAdmin;
+import me.ninjay.oneinfo.mvp.estruturas.EstruturaJogador;
+import me.ninjay.oneinfo.mvp.estruturas.EstruturaTempo;
+
+public class ComandoMvP2 implements CommandExecutor{
+
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String lb, String[] args) {
+		if(sender instanceof Player) {
+			Player p = (Player) sender;
+			if (args.length == 0) {
+				p.sendMessage("§cComando não encontrado. Utilize /mvp ajuda.");
+				return true;
+			}
+			String sub = args[0];
+			if (sub.equalsIgnoreCase("ajuda")) {
+
+				if (!p.hasPermission("mvp.admin")) {
+					EstruturaJogador.ajudajog(p);
+					return true;
+				}
+			}
+			if (sub.equalsIgnoreCase("ajuda")) {
+				if (p.hasPermission("mvp.admin")) {
+					EstruturaAdmin.ajudastf(p);
+					return true;
+				}
+			}
+			if (sub.equalsIgnoreCase("entrar")) {
+				if (Main.tempo == null) {
+					p.sendMessage("§cO evento MvP não está acontecendo no momento.");
+					return true;
+				} else {
+					if (Main.tempo == EstruturaTempo.PRE) {
+						EstruturaJogador.entrar(p);
+						Main.dentro.add(p);
+						for(Player todos : Bukkit.getOnlinePlayers()) {
+							if(todos.hasPermission("mvp.pvp")) {
+								todos.getWorld().setPVP(false);
+							}
+									
+						}
+						return true;
+					}
+					if (Main.fora.contains(p)) {
+						p.sendMessage("§cVocê já morreu, tente novamente na próxima vez.");
+						return true;
+					}
+					if (Main.tempo == EstruturaTempo.JOGO) {
+						p.sendMessage("§cO evento MvP já iniciou.");
+						return true;
+					}
+
+					if (!p.hasPermission("mvp.admin")) {
+						return true;
+					}
+
+				}
+
+			}
+		}
+		return false;
+	}
+
+}

@@ -1,0 +1,79 @@
+package me.ninjay.upsoulth.captcha;
+
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.inventory.InventoryCloseEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.player.PlayerQuitEvent;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+
+import me.ninjay.upsoulth.main.Main;
+import net.eduard.api.lib.Mine;
+
+public class EventosCaptcha implements Listener {
+
+	@EventHandler
+	public void aoEntrar(PlayerJoinEvent e) {
+		Player p = e.getPlayer();
+		Main.dentro.add(p);
+		Inventory menu = Mine.newInventory("Clique na TNT", 9*3);
+		Inventory menu2 = Mine.newInventory("Clique na ABÓBORA", 9*3);
+		if (Main.dentro.contains(p)) {
+			EstruturaGlobal.abrir(p, menu);
+		}
+		if(Main.dentro2.contains(p)) {
+			EstruturaGlobal.abrir(p, menu2);
+		}
+
+	}
+
+	@EventHandler
+	public void aoCliclarTnT(InventoryClickEvent e) {
+		Player p = (Player) e.getWhoClicked();
+		if (e.getInventory().getTitle().equals("Clique no TNT")) {
+			e.setCancelled(true);
+			ItemStack tnt = Mine.newItem(Material.TNT, "§eClique no correto");
+			if (e.getCurrentItem().isSimilar(tnt)) {
+				p.sendMessage("§a§lCAPTCHA §aConfirmado, tenha um bom jogo.");
+				Main.dentro.remove(p);
+				for (int d = 0; d < 5; d++) {
+					p.getOpenInventory().close();
+
+				}
+			}
+		}
+		ItemStack peixe = Mine.newItem(Material.RAW_FISH, "§eClique no correto");
+
+		if (e.getCurrentItem().isSimilar(peixe)) {
+			p.kickPlayer("§cVocê errou o captcha");
+
+		}
+		ItemStack esmeralda = Mine.newItem(Material.EMERALD, "§eClique no correto");
+		if (e.getCurrentItem().isSimilar(esmeralda)) {
+			p.kickPlayer("§cVocê errou o captcha");
+		}
+
+	}
+
+	@EventHandler
+	public void aoFechar(InventoryCloseEvent e) {
+		Player p = (Player) e.getPlayer();
+		if (Main.dentro.contains(p)) {
+			EstruturaGlobal.abrir(p);
+		}
+		if (!Main.dentro.contains(p)) {
+			return;
+		}
+	}
+
+	@EventHandler
+	public void aoSair(PlayerQuitEvent e) {
+		Player p = e.getPlayer();
+		Main.dentro.add(p);
+	}
+
+}

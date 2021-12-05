@@ -1,0 +1,7 @@
+package me.ninjay.oneinfo.mvp.comandos;
+
+import org.bukkit.command.CommandExecutor;
+
+public class ComandoMvP2 implements CommandExecutor{
+
+}

@@ -1,0 +1,15 @@
+package me.ninjay.oneperfil.eventos;
+
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.block.BlockBreakEvent;
+
+public class EventosInfo implements Listener{
+	
+	@EventHandler
+	public void Blocos(BlockBreakEvent e) {
+		Player p = e.getPlayer();
+	}
+
+}

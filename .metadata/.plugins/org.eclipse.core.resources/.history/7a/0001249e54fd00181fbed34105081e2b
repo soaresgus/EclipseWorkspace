@@ -1,0 +1,27 @@
+package me.ninjay.oneinfo.estruturas;
+
+import java.time.LocalDateTime;
+import org.bukkit.entity.Player;
+
+import net.eduard.api.lib.BukkitConfig;
+
+public class DataAPI {
+
+	public static String getData(Player p, BukkitConfig config) {
+		return config.getString("Data");
+	}
+	public static void setData(Player p, BukkitConfig config) {
+		LocalDateTime now = LocalDateTime.now(); 
+		config.set("Data", now.getDayOfMonth()+"/"+now.getMonth().getValue()+"/"+now.getYear());
+		config.saveConfig();
+	}
+	public static void setUltimoLogin(Player p, BukkitConfig config) {
+		LocalDateTime now = LocalDateTime.now();
+		config.set(p.getName()+"_ultimologin", now.getDayOfMonth()+"/"+now.getMonth().getValue()+"/"+now.getYear()+" : "+now.getHour()+":"+now.getMinute()+":"+now.getSecond());
+	    config.saveConfig();
+	}
+	public static String getUltimoLogin(Player p, BukkitConfig config) {
+		return config.getString(p.getName()+"_ultimologin");
+	}
+	
+}

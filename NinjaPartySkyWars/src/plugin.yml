@@ -1,0 +1,6 @@
+name: NinjaPartySkyWars
+version: 1.0
+author: Ninjay_
+main: me.ninjay.ninjapartysw.main.Main
+commands:
+  bau:

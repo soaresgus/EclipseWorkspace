@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Licence.java&apos; to &apos;Curso/src/me.ninjay.curso.licenca&apos;&#x0D;&#x0A;- Original project: &apos;CursoAPI&apos;&#x0D;&#x0A;- Destination element: &apos;Curso/src/me.ninjay.curso.licenca&apos;&#x0D;&#x0A;- Original element: &apos;net.eduard.api.lib.licence.Licence.java&apos;" description="Copy compilation unit" destination="=Curso/src&lt;me.ninjay.curso.licenca" element1="/src&lt;net.eduard.api.lib.licence{Licence.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1542242930221" units="1" version="1.0"/>
+</session>

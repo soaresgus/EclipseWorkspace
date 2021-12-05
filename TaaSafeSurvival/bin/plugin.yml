@@ -1,0 +1,13 @@
+name: TaaSafeSurvival
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.safesurvival.main.Main
+commands:
+  spawn:
+  tpa:
+   aliases: [teleporte]
+  tpaccept:
+   aliases: [tpaceitar,tpaaccept,tpaaceitar]
+  tpacancel:
+   aliases: [tpacancelar,tpcancel,tpcancelar]
+  

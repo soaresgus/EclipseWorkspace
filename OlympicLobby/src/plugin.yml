@@ -1,0 +1,10 @@
+name: OlympicLobby
+version: 1.0
+author: Ninjay_
+main: me.ninjay.olympiclobby.main.Main
+commands:
+  login:
+  register:
+  trocarsenha:
+  conectar:
+  setspawn:

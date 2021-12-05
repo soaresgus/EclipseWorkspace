@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TimerAPI.java&apos; to &apos;SafeStaff/src/me.ninjay.safestaff.estruturas&apos;&#x0D;&#x0A;- Original project: &apos;SafeCore&apos;&#x0D;&#x0A;- Destination element: &apos;SafeStaff/src/me.ninjay.safestaff.estruturas&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.safecore.estruturas.timer.TimerAPI.java&apos;" description="Copy compilation unit" destination="=SafeStaff/src&lt;me.ninjay.safestaff.estruturas" element1="/src&lt;me.ninjay.safecore.estruturas.timer{TimerAPI.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1595816843996" units="1" version="1.0"/>
+</session>

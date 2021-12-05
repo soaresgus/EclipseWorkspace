@@ -1,0 +1,22 @@
+
+#
+# Config NinjaSimple
+# Feito por Ninjay_
+#
+
+#Geral
+apenas_players: '&6&lApenas players podem utilizar.'
+
+#Staffchat
+utilize_certo: '&6&lUtilize /sc <mensagem>.'
+chat: '&b&l{nick}: &f{msg}'  #{nick} = Nick de quem mandou/ {msg} = mensagem.#
+
+#Aviso
+utilize_certo2: '&6&lUtilize /aviso <mensagem>.'
+chat2: '&4&lAVISO >>> &c{msg2}' #{msg2} = mensagem.#
+
+#Gamemode
+utilize_certo3: '&6&lUtilize /gm <0 1 3>.'
+
+#Tpa
+utilize_certo4: '&6&lUtilize /tpa <nick>'

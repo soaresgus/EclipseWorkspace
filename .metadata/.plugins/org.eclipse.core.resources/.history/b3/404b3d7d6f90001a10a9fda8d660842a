@@ -1,0 +1,8 @@
+package me.ninjay.safecore.estruturas;
+
+public class TagsControler {
+	
+	public static void setarTag(Player p) {
+	}
+
+}

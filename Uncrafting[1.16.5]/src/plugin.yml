@@ -1,0 +1,5 @@
+name: Template
+version: 1.0
+author: Ninjay_
+main: me.ninjay.uncrafting.main.Main
+commands:

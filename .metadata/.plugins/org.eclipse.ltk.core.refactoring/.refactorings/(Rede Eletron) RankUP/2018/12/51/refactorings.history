@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;RedeOnePerfil/src/me.ninjay.oneperfil.ranksbeta&apos;&#x0D;&#x0A;- Original project: &apos;(Rede Eletron) RankUP&apos;&#x0D;&#x0A;- Destination element: &apos;RedeOnePerfil/src/me.ninjay.oneperfil.ranksbeta&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     (Rede Eletron) RankUP/src/br.beta.eletron.rankup.command&#x0D;&#x0A;     (Rede Eletron) RankUP/src/br.beta.eletron.rankup.manager" description="Copy packages" destination="=RedeOnePerfil/src&lt;me.ninjay.oneperfil.ranksbeta" element1="/src&lt;br.beta.eletron.rankup.command" element2="/src&lt;br.beta.eletron.rankup.manager" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1544983109135" version="1.0"/>
+</session>

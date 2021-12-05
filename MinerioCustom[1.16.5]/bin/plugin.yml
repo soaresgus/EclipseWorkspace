@@ -1,0 +1,7 @@
+name: MinerioCustom
+version: 1.0
+author: Ninjay_
+main: me.ninjay.mineriocustom.main.Main
+api-version: 1.16
+commands:
+  daritens:

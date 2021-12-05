@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DataAPI.java&apos; to &apos;KustStaff/src/me.ninjay.kuststaff.estruturas&apos;&#x0D;&#x0A;- Original project: &apos;NinjaAPI [ESQUECE ELA]&apos;&#x0D;&#x0A;- Destination element: &apos;KustStaff/src/me.ninjay.kuststaff.estruturas&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.ninjaapi.bukkit.DataAPI.DataAPI.java&apos;" description="Copy compilation unit" destination="=KustStaff/src&lt;me.ninjay.kuststaff.estruturas" element1="/src&lt;me.ninjay.ninjaapi.bukkit.DataAPI{DataAPI.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1621340882389" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,6 @@
+name: LuckyBlocksYoutubers
+version: 1.0
+author: Ninjay_
+main: me.ninjay.luckyblocksyt.main.Main
+commands:
+  daritens:

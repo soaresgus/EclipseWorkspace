@@ -1,0 +1,42 @@
+package me.ninjay.oneperfil.glad.estruturas;
+
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+
+import me.ninjay.oneperfil.main.Main;
+
+public class EstruturaAdmin {
+
+	public static void ajudastf(Player p) {
+		p.sendMessage(
+				"§e§lGladiator Comandos\n \n§e§l/gladiator entrar §eEntre no evento.\n \n§e§l/gladiator iniciar §eInicie o evento.\n \n§e§l/gladiator setspawn §eSeta o spawn do evento.\n \n§e§l/gladiator setjogo §eSeta o local onde irá ocorrer o evento.\n \n§e§l/gladiator setmorte §eSeta o local no qual o jogador irá nascer se morrer no evento.\n \n§e§l/gladiator setganhador <tag> <clan> §eSeta o vencedor do evento.\n ");
+	}
+
+	public static void iniciar(Player p) {
+		Main.tempo3 = EstruturaTempo3.PRE3;
+		Bukkit.broadcastMessage(
+				"§e§lEvento - Gladiator\n \n§eIniciando em: 3 minutos\n \n§eLute contra todos junto com seu clan, e o ultimo clan a sobreviver ganha o evento !\n \n§ePara entrar utilize /gladiator entrar.");
+	}
+
+	public static void setspawn(Player p) {
+		p.sendMessage("§eLocal de spawn do evento setado.");
+		Main.glad.set("spawn_glad", p.getLocation());
+		Main.glad.saveConfig();
+	}
+
+	public static void setjogo(Player p) {
+		p.sendMessage("§eLocal de jogo do evento setado.");
+		Main.glad.set("jogo_glad", p.getLocation());
+		Main.tct.saveConfig();
+
+	}
+
+	public static void setmorte(Player p) {
+		p.sendMessage("§eLocal de morte do evento setado.");
+		Main.tct.set("morte_tct", p.getLocation());
+		Main.tct.saveConfig();
+	}
+
+}
+
+	

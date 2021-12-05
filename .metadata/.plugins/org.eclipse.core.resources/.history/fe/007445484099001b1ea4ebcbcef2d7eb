@@ -1,0 +1,169 @@
+package me.ninjay.kustickets.comandos;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.scheduler.BukkitRunnable;
+
+import me.ninjay.kustickets.estruturas.DataAPI;
+import me.ninjay.kustickets.main.Main;
+import me.ninjay.kustickets.utils.Mine;
+import net.md_5.bungee.api.chat.ClickEvent;
+import net.md_5.bungee.api.chat.TextComponent;
+import net.md_5.bungee.api.chat.ClickEvent.Action;
+
+public class ComandoTickets implements CommandExecutor, Listener{
+	
+	public static HashMap<String, String> value = new HashMap<>();
+	public static HashMap<String, String> save = new HashMap<>();
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String lb, String[] args) {
+		if(sender instanceof Player) {
+			Player p = (Player)sender;
+
+			//INSERT INTO `youtuber` (`NICK`, `DATA`, `NOME`, `LINK`, `ID`) VALUES ('Ninjay', '30/03/2021', 'Matheus', 'youtube.com', NULL)
+			
+			//Main.sql.update("INSERT INTO `youtuber` (`NICK`, `DATA`, `NOME`, `LINK`, `ID`) VALUES ('"+p.getName()+"', '08/04/2021', 'teste', 'youtube.com/c/luizh222', NULL)");
+		
+			//p.sendMessage(Main.sql.getString("youtuber", "LINK", "ID=3", "0"));
+		
+			Inventory principal = Mine.newInventory("Tickets", 9*3);
+			
+			ItemStack antigos = Mine.newHead("§eMeus tickets", p.getName(), 1);
+			ItemStack abrir = Mine.newHead("§eAbrir ticket", "Lime", 1);
+			ItemStack chamar = Mine.newHead("§eChamar um membro da equipe", "Addelburgh", 1);
+			ItemStack armazem = Mine.newHead("§eResponder tickets enviados", "ElMarcosFTW", 1);
+			
+			principal.setItem(Mine.getPosition(2, 3), antigos);
+			principal.setItem(Mine.getPosition(2, 7), abrir);
+			principal.setItem(Mine.getPosition(2, 5), chamar);
+			
+			p.sendMessage("§aVocê abriu a área de tickets!");
+			
+		if(p.hasPermission("ticket.admin")) {
+			principal.setItem(Mine.getPosition(3, 9), armazem);
+			p.openInventory(principal);
+		}else {
+			p.openInventory(principal);
+		}
+			
+		}
+		return false;
+	}
+	
+	@EventHandler
+	public static void aoClicar(InventoryClickEvent e) {
+		Player p = (Player) e.getWhoClicked();
+		
+		if(e.getInventory().getTitle().contains("Tickets") || e.getInventory().getTitle().contains("Qual o motivo do ticket?")) {
+			e.setCancelled(true);
+		if(e.getCurrentItem() != null) {
+			if(e.getCurrentItem().getItemMeta() != null) {
+					if(e.getCurrentItem().getItemMeta().getDisplayName().contains("§eChamar um membro")) {
+						p.closeInventory();
+						p.sendMessage("§aVocê chamou um membro da equipe! Aguarde ser atendido.");
+						
+						for(Player todos : Bukkit.getOnlinePlayers()) {
+							
+							if(todos.hasPermission("ticket.request")) {
+								TextComponent request = new TextComponent(" \n§aUm membro da equipe foi solicitado!\n \n§aJogador: "+p.getName()+"\n \n§e§lCLIQUE AQUI §apara se teleportar até o mesmo.\n ");
+								request.setClickEvent(new ClickEvent(Action.SUGGEST_COMMAND, "/tp "+p.getName()));
+						        p.spigot().sendMessage(request);
+							}
+							
+						}
+					}
+					if(e.getCurrentItem().getItemMeta().getDisplayName().contains("§eAbrir ticket")) {
+						Inventory menu = Mine.newInventory("Qual o motivo do ticket?", 9*3);
+						
+						ItemStack duvida = Mine.newHead("§eDúvida", "MHF_Question", 1, " ", " §7Retire suas dúvidas.");
+						ItemStack youtuber = Mine.newHead("§eTag Youtuber", "MHF_Youtube", 1, " ", " §7Solicite sua tag youtuber.");
+						ItemStack denuncia = Mine.newHead("§eDenúncia", "MHF_ArrowDown", 1, " ", " §7Denúncie um jogador suspeito.");
+						ItemStack revisao = Mine.newHead("§eRevisão", "Olaf_C", 1, " ", " §7Solicite a revisão de uma punição.");
+						ItemStack erro = Mine.newHead("§eErros", "Earth", 1, " ", " §7Denúncie problemas e falhas do servidor.");
+					
+						menu.setItem(Mine.getPosition(2, 3), duvida);
+						menu.setItem(Mine.getPosition(2, 4), youtuber);
+						menu.setItem(Mine.getPosition(2, 5), erro);
+						menu.setItem(Mine.getPosition(2, 6), denuncia);
+						menu.setItem(Mine.getPosition(2, 7), revisao);
+						
+						p.getOpenInventory().close();
+						p.openInventory(menu);
+						
+					}
+					if(e.getCurrentItem().getItemMeta().getDisplayName().contains("§eMeus tickets")) {
+						Inventory menu = Mine.newInventory("Meus tickets", 9*10);
+					}
+					if(e.getCurrentItem().getItemMeta().getDisplayName().contains("§eDúvida")) {
+						p.getOpenInventory().close();
+						
+						TextComponent texto = new TextComponent("§eDigite a área da sua dúvida §c§lCLIQUE AQUI §epara cancelar o §eenvio.\n \n§7Exemplo: Factions");
+						texto.setClickEvent(new ClickEvent(Action.RUN_COMMAND, "/cancelar"));
+						p.spigot().sendMessage(texto);
+						value.put(p.getName(), "duvida1");
+					}
+				}
+			}
+		}
+	}
+	
+	@EventHandler
+	public void aoFalar(AsyncPlayerChatEvent e) {
+		Player p = e.getPlayer();
+		
+		if(value.containsKey(p.getName())) {
+			if(value.get(p.getName()).equalsIgnoreCase("duvida1")) {
+				e.setCancelled(true);
+				p.sendMessage("§aÁrea definida como §e"+e.getMessage()+"\n ");
+				save.put(p.getName()+".duvida.area", e.getMessage());
+				value.remove(p.getName(), "duvida1");
+				
+				new BukkitRunnable() {
+					
+					@Override
+					public void run() {
+						value.put(p.getName(), "duvida2");
+						TextComponent texto = new TextComponent("§eDigite sua dúvida ou §c§lCLIQUE AQUI §epara cancelar o envio.");
+						texto.setClickEvent(new ClickEvent(Action.RUN_COMMAND, "/cancelar"));
+						p.spigot().sendMessage(texto);
+					}
+				}.runTaskLaterAsynchronously(Main.getPlugin(Main.class), 5);
+			}
+		if(value.containsKey(p.getName())) {
+			if(value.get(p.getName()).equalsIgnoreCase("duvida2")) {
+				e.setCancelled(true);
+				p.sendMessage("§aTicket enviado, quando respondido estará no menu 'Meus tickets'.");
+				save.put(p.getName()+".duvida.duvida", e.getMessage());
+				
+				Main.sql.update("INSERT INTO `duvida` (`NICK`, `AREA`, `DUVIDA`, `LIDO`, `DATA`, `RESPOSTA`, `ID`) VALUES ('"+p.getName()+"', '"+save.get(p.getName()+".duvida.area")+"', '"+save.get(p.getName()+".duvida.duvida")+"', 'false', '"+DataAPI.getCompostoDMA()+"', 'Aguardando resposta.', null)");
+			
+				new BukkitRunnable() {
+					
+					@Override
+					public void run() {
+						save.remove(p.getName());
+						value.remove(p.getName());
+					}
+				}.runTaskLaterAsynchronously(Main.getPlugin(Main.class), 60*20);
+			}
+		}
+		}
+	}
+	
+}
+
+

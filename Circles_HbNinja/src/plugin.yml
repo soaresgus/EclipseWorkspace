@@ -1,0 +1,5 @@
+name: Circles_HbNinja
+version: 1.0
+author: Ninjay_
+main: me.ninjay.circles_hbninja.main.Main
+commands:

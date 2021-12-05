@@ -1,0 +1,30 @@
+package me.ninjay.upsoulth.captcha;
+
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.inventory.Inventory;
+
+import me.ninjay.upsoulth.main.Main;
+import net.eduard.api.lib.Mine;
+
+public class EventosCaptcha implements Listener {
+
+	@EventHandler
+	public void aoEntrar(PlayerJoinEvent e) {
+		Player p = e.getPlayer();
+		if(!Main.dentro.contains(p)) {
+			Inventory um = Mine.newInventory("Clique na TNT", 9*3);
+			EstruturaGlobal.abrir(p, um);
+			Main.dentro.add(p);
+			Main.dentro2.add(p);
+			return;
+		}
+		if(Main.dentro2.contains(p)) {
+			Inventory dois = Mine.newInventory("Clique na CRAFT", 9*3);
+			EstruturaGlobal.abrir(p, dois);
+			return;
+		}
+}
+}

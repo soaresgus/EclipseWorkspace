@@ -1,0 +1,8 @@
+name: KustEspeciais
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustespeciais.main.Main
+commands:
+  giveespeciais:
+   aliases: [especiais]
+  shop:

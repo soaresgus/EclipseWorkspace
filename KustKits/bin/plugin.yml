@@ -1,0 +1,7 @@
+name: KustKits
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustkits.main.Main
+commands:
+  kit:
+   aliases: [kits]

@@ -1,0 +1,36 @@
+1544452577714	Rename package 'me.ninjay.template.comandos'
+1544452584225	Rename package 'me.ninjay.template.estruturas'
+1544452589687	Rename package 'me.ninjay.template.eventos'
+1544452595993	Rename package 'me.ninjay.template.main'
+1544452608664	Rename type 'ComandoTemplate'
+1544452618600	Rename type 'EventosTemplate'
+1544456059061	Delete element
+1544458891795	Rename type 'EstruturaJogaodr'
+1544458971350	Copy package
+1544458977355	Delete element
+1544458985193	Copy package
+1544458988210	Delete element
+1544458995758	Delete element
+1544459005837	Rename package 'me.ninjay.onemvp.comandos'
+1544459014974	Rename package 'me.ninjay.onemvp.estruturas'
+1544459021836	Rename package 'me.ninjay.onemvp.eventos'
+1544460668649	Rename package 'me.ninjay.onetct.comandos'
+1544460677038	Rename package 'me.ninjay.onetct.estruturas'
+1544460682654	Rename package 'me.ninjay.onetct.eventos'
+1544460797859	Rename type 'EstruturaTempo'
+1544544024202	Delete element
+1544544186131	Rename type 'ComandoTcT2'
+1544576694289	Delete element
+1544576698616	Rename type 'ComandoMvP2'
+1544588612853	Rename type 'ComandoInfo'
+1544588635486	Rename package 'me.ninjay.oneinfo'
+1544591168844	Rename type 'EventosInfo'
+1544624368603	Move compilation unit
+1544635012365	Delete element
+1544818140899	Rename package 'me.ninjay.onealmas'
+1544818146217	Delete element
+1544818155099	Delete element
+1544818174212	Rename package 'me.ninjay.onealmas'
+1544818212100	Delete element
+1544883928034	Delete elements
+1544886554284	Encapsulate field 'menu'

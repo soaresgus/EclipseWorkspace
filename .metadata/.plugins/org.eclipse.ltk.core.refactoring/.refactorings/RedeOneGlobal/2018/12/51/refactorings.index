@@ -1,0 +1,27 @@
+1544976601277	Encapsulate field 'numero'
+1544977531998	Encapsulate field 'grupo'
+1544983075801	Delete element
+1544983102614	Delete element
+1544983132178	Rename package 'br.beta.eletron.rankup'
+1544983187523	Delete element
+1544983671541	Encapsulate field 'grupo'
+1544983674382	Encapsulate field 'eventos'
+1544983676835	Encapsulate field 'almas'
+1544983679861	Encapsulate field 'horas'
+1544983682470	Encapsulate field 'blocos'
+1544983685871	Encapsulate field 'icone'
+1545008478982	Rename package 'me.ninjay.oneperfil.ranksbeta'
+1545013005305	Rename package 'me.ninjay.tabscore.eventos'
+1545121700730	Delete element
+1545122513263	Encapsulate field 'cargo'
+1545122676798	Encapsulate field 'nome'
+1545143006335	Delete element
+1545154768257	Rename type 'TagControler'
+1545180006144	Delete element
+1545445063622	Rename type 'TagAPI'
+1545445066989	Rename type 'TagCommand'
+1545445157393	Rename type 'TagControler'
+1545445161747	Rename type 'Tags'
+1545447361697	Encapsulate field 'sufix'
+1545447363931	Encapsulate field 'prefix'
+1545448350306	Encapsulate field 'suffix'

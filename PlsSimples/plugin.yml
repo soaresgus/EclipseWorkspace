@@ -1,0 +1,6 @@
+name: NinjaLuz
+version: 1.0
+author: Ninjay_
+main: me.ninjay.plssimples.Main
+commands:
+ luz:

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;me.ninjay.picaretayoutuber.utils&apos; to &apos;Template1.13.2/src/me.ninjay.template&apos;&#x0D;&#x0A;- Original project: &apos;PicaretasYoutubers[1.13.2]&apos;&#x0D;&#x0A;- Destination element: &apos;Template1.13.2/src/me.ninjay.template&apos;&#x0D;&#x0A;- Original element: &apos;PicaretasYoutubers[1.13.2]/src/me.ninjay.picaretayoutuber.utils&apos;" description="Copy package" destination="=Template1.13.2/src&lt;me.ninjay.template" element1="/src&lt;me.ninjay.picaretayoutuber.utils" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1625250508140" version="1.0"/>
+</session>

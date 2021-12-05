@@ -1,0 +1,12 @@
+name: NinjaHomes
+version: 1.0
+author: Ninjay_
+main: me.ninjay.ninjahomes.main.Main
+commands:
+  home:
+  sethome:
+  delhome:
+  particular:
+  publica:
+  listhome:
+   aliases: [listhomes]

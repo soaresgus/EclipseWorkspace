@@ -1,0 +1,6 @@
+name: KustCash
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustcash.main.Main
+commands:
+  cash:

@@ -1,0 +1,6 @@
+name: NinjaHereos
+version: 1.0
+author: Ninjay_
+main: me.ninjay.hereos.Main
+commands:
+ givecabine:

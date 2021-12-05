@@ -1,0 +1,7 @@
+name: TocarMinerio
+version: 1.0
+author: Ninjay_
+main: me.ninjay.tocarminerio.main.Main
+api-version: 1.16
+commands:
+  tocar:

@@ -1,0 +1,7 @@
+name: CirclesTestes
+version: 1.0
+author: Ninjay_
+main: me.ninjay.circles_testes.main.Main
+commands:
+  cargo:
+   aliases: [grupo, cargos, group]

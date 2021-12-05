@@ -1,0 +1,7 @@
+name: MegatayMaquinas
+version: 1.0
+author: Ninjay_
+main: me.ninjay.megataymaquinas.main.Main
+depend: [MegateyUtils]
+commands:
+  maquina:

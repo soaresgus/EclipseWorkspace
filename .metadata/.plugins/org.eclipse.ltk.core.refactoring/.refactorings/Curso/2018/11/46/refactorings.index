@@ -1,0 +1,9 @@
+1542070676239	Rename type 'BarAPI'
+1542241640640	Rename package 'me.ninjay.curso.licensa'
+1542326790641	Rename package 'me.ninjay.curso.config'
+1542326831224	Encapsulate field 'nome'
+1542326887631	Encapsulate field 'arquivo'
+1542326963256	Encapsulate field 'config'
+1542327005772	Encapsulate field 'plugin'
+1542328555000	Rename type 'BungeeCord'
+1542328909932	Delete elements

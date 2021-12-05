@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;me.ninjay.poo.comandos.ComandoNPC&apos; to &apos;ComandoProbabilidade&apos;&#x0D;&#x0A;- Original project: &apos;TestesPOO&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.poo.comandos.ComandoNPC&apos;&#x0D;&#x0A;- Renamed element: &apos;me.ninjay.poo.comandos.ComandoProbabilidade&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ComandoNPC&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;me.ninjay.poo.comandos{ComandoNPC.java[ComandoNPC" matchStrategy="1" name="ComandoProbabilidade" qualified="false" references="true" similarDeclarations="false" stamp="1545595971928" textual="false" version="1.0"/>
+</session>

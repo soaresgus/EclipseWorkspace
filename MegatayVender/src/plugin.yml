@@ -1,0 +1,7 @@
+name: MegatayVender
+version: 1.0
+author: Ninjay_
+main: me.ninjay.megavender.main.Main
+commands:
+  drops:
+  vender:

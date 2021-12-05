@@ -1,0 +1,10 @@
+name: KustPunir
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustpunir.main.Main
+commands:
+  s:
+   aliases: [staffchat]
+  punir:
+  checkpunir:
+  revogar:

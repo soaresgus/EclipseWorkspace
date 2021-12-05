@@ -1,0 +1,9 @@
+name: NinjaComerciante
+version: 1.0
+author: Ninjay_
+main: me.ninjay.comerciante.main.Main
+depends: [NinjaUtils]
+commands:
+  comerciante:
+  comerciantenpc:
+  reloadconfig:

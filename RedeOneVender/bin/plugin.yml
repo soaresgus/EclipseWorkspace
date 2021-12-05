@@ -1,0 +1,7 @@
+name: RedeOneVender
+version: 1.0
+author: MyNameIsNinjay
+depend: [CursoAPI]
+main: me.ninjay.onevender.main.Main
+commands:
+  vender:

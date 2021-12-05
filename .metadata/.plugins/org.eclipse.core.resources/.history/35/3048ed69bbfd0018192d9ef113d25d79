@@ -1,0 +1,27 @@
+package me.ninjay.oneinfo.estruturas;
+
+import org.bukkit.entity.Player;
+
+import net.eduard.api.lib.BukkitConfig;
+
+public class StatsAPI {
+	
+	public static Long getKills(Player p, BukkitConfig config) {
+		return config.getLong(p.getName()+"_kills");
+	}
+	public static Long getMortes(Player p, BukkitConfig config) {
+		return config.getLong(p.getName()+"_mortes");
+	}
+	public static void setMortes(Player p, BukkitConfig config, Long quanto) {
+		config.set(p.getName()+"_mortes", quanto);
+		config.saveConfig();
+	}
+	public static void setKills(Player p, BukkitConfig config, Long quanto) {
+		config.set(p.getName()+"_kills", quanto);
+		config.saveConfig();
+	}
+	public static Long getKdr(Player p, BukkitConfig config) {
+		
+	}
+
+}

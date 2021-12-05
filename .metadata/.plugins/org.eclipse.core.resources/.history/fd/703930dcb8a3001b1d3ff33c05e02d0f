@@ -1,0 +1,47 @@
+package me.ninjay.kustkits.estruturas;
+
+import org.bukkit.Material;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+
+import me.ninjay.kustkits.utils.Mine;
+
+public class KitControler implements CommandExecutor, Listener{
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String lb, String[] args) {
+		if(sender instanceof Player) {
+			Player p = (Player) sender;
+			
+			Inventory menu = Mine.newInventory("Kits", 9*3);
+			ItemStack basico = Mine.newItem(Material.LOG, "§eKits básicos", 1, 0, "§7Kits básicos do servidor.", " ", "§eClique direito para abrir.");
+			ItemStack vip = Mine.newItem(Material.DIAMOND_BLOCK, "§eKits VIPs", 1, 0, "§7Kits VIPs do servidor.", " ", "§eClique direito para abrir.");
+			ItemStack caixa = Mine.newItem(Material.ENDER_CHEST, "§eCaixas misteriosas", 1, 0, "§7Caixas misteriosas do servidor.", " ", "§eClique direito para abrir.");
+			ItemStack especial = Mine.newItem(Material.NETHER_STAR, "§eItens especiais", 1, 0, "§7Itens especiais do servidor.", " ", "§eClique direito para abrir.");
+	
+			menu.setItem(Mine.getPosition(2, 2), basico);
+			menu.setItem(Mine.getPosition(2, 4), vip);
+			menu.setItem(Mine.getPosition(2, 6), caixa);
+			menu.setItem(Mine.getPosition(2, 8), especial);
+			
+			p.openInventory(menu);
+	
+		}
+		return false;
+	}
+	
+	@EventHandler
+	public void aoClicar(InventoryClickEvent e) {
+		Player p = (Player) e.getWhoClicked();
+		
+		
+	}
+
+}

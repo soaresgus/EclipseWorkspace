@@ -1,0 +1,6 @@
+package me.ninjay.upsoulth.captcha;
+
+
+
+public class EventosCaptcha implements Listener {
+}

@@ -1,0 +1,6 @@
+name: SafeDrops
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.safedrops.main.Main
+depend: [NinjaUtils]
+commands:

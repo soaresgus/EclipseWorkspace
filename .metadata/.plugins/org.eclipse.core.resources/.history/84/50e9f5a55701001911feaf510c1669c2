@@ -1,0 +1,10 @@
+package me.ninjay.oneperfil.ranks;
+
+public class RankAPI {
+	
+	public RankUp rankAPIGetRank() {
+		return null;
+		 
+	}
+
+}

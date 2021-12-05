@@ -1,0 +1,21 @@
+name: RedeOnePerfil
+version: 1.0
+author: Ninjay_
+main: me.ninjay.oneperfil.main.Main
+depend: [CursoAPI]
+depend: [PlayerPoints]
+commands:
+  perfil:
+  tct:
+  mvp:
+  glad:
+    aliases: [gladiator]
+  almas:
+    aliases: [alma]
+  rank:
+    aliases: [ranks]
+  rankup:
+    aliases: [upar]
+  tag:
+    aliases: [cargo]
+    

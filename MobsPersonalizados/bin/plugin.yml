@@ -1,0 +1,5 @@
+name: MobsPersonalizados
+version: 1.0
+author: Ninjay_
+main: me.ninjay.mobspersonalizados.main.Main
+commands:

@@ -1,0 +1,7 @@
+name: KustBaus
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustbaus.main.Main
+commands:
+  givebau:
+  bau:

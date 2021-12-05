@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ComandoTemplate.java&apos; to &apos;LobosCustom[1.16.5]/src/me.ninjay.loboscustom.comandos&apos;&#x0D;&#x0A;- Original project: &apos;Template1.16.5&apos;&#x0D;&#x0A;- Destination element: &apos;LobosCustom[1.16.5]/src/me.ninjay.loboscustom.comandos&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.template.comandos.ComandoTemplate.java&apos;" description="Copy compilation unit" destination="=LobosCustom\[1.16.5\]/src&lt;me.ninjay.loboscustom.comandos" element1="/src&lt;me.ninjay.template.comandos{ComandoTemplate.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1630005626241" units="1" version="1.0"/>
+</session>

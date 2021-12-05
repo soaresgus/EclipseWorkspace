@@ -1,0 +1,6 @@
+name: NinjaDropsMob
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.dropsmob.main.Main
+depend: [NinjaUtils]
+commands:

@@ -1,0 +1,6 @@
+name: PicaretasYoutuber
+version: 1.0
+author: Ninjay_
+main: me.ninjay.picaretayoutuber.main.Main
+commands:
+  darpicareta:

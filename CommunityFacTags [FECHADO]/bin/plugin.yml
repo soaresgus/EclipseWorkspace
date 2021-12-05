@@ -1,0 +1,7 @@
+name: CommunityFacTags
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.factags.main.Main
+commands:
+  teste:
+

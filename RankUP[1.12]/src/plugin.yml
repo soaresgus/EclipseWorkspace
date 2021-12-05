@@ -1,0 +1,6 @@
+name: RankUP1.12
+version: 1.0
+author: Ninjay_
+main: me.ninjay.rankup112.main.Main
+commands:
+  ranks:

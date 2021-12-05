@@ -1,0 +1,76 @@
+package me.ninjay.oneperfil.glad.comandos;
+
+import org.bukkit.Bukkit;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+
+import me.ninjay.oneperfil.glad.estruturas.EstruturaAdmin;
+import me.ninjay.oneperfil.glad.estruturas.EstruturaJogador;
+import me.ninjay.oneperfil.glad.estruturas.EstruturaTempo3;
+import me.ninjay.oneperfil.main.Main;
+
+public class ComandoGlad2 implements CommandExecutor{
+	
+	@Override
+	public boolean onCommand(CommandSender sender, Command cmd, String lb, String[] args) {
+		if(sender instanceof Player) {
+			Player p = (Player) sender;
+			if (args.length == 0) {
+				p.sendMessage("§cComando não encontrado. Utilze /gladiator ajuda.");
+				return true;
+			}
+			String sub = args[0];
+
+			if (sub.equalsIgnoreCase("ajuda")) {
+				if (!p.hasPermission("glad.admin")) {
+					EstruturaJogador.ajudajog(p);
+					return true;
+				}
+			}
+			if (sub.equalsIgnoreCase("ajuda")) {
+				if (p.hasPermission("glad.admin")) {
+					EstruturaAdmin.ajudastf(p);
+					return true;
+				}
+			}
+			if(sub.equalsIgnoreCase("entrar")) {
+				if(Main.tempo3 == EstruturaTempo3.PRE3) {
+					for(Player todos : Bukkit.getOnlinePlayers()) {
+						if(todos.hasPermission("gladiator.pvp")) {
+							todos.getWorld().setPVP(false);
+							EstruturaJogador.entrar(p);
+							return true;
+						}
+					}
+				}
+			}
+
+			if (sub.equalsIgnoreCase("entrar")) {
+				if (Main.tempo3 == null) {
+					p.sendMessage("§cO evento Gladiator não está ocorrendo no momento.");
+					return true;
+				}
+
+				if (sub.equalsIgnoreCase("entrar")) {
+					if (Main.fora3.contains(p)) {
+						p.sendMessage("§cVocê já morreu, tente novamente na próxima vez.");
+						return true;
+					}
+					if (sub.equalsIgnoreCase("entrar")) {
+						if (Main.tempo3 == EstruturaTempo3.JOGO3) {
+							p.sendMessage("§cO evento Gladiator já iniciou.");
+							return true;
+						}
+						
+					}
+				}
+			}
+
+			
+		}
+		return false;
+	}
+
+}

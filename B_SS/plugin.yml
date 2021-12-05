@@ -1,0 +1,7 @@
+name: B_SS
+authors: [BaconCodes]
+version: 1.0
+main: net.b_ss.Main
+commands:
+  ss:
+  ssliberar:

@@ -1,0 +1,13 @@
+package me.ninjay.ninjacxc.estruturas;
+
+import org.bukkit.entity.Player;
+
+import me.ninjay.ninjacxc.main.Main;
+
+public class GlobalAPI {
+
+	public static void aoEntrar(Player p) {
+		p.sendMessage("§aSejá bem vindo a mais uma sala de Clan x Clan\n \nInformaçoes da partida: \n \nDuelo: "+Main.a1.getStringList("Opa"));
+	}
+	
+}

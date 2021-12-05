@@ -1,0 +1,15 @@
+name: NinjaSimple
+version: 1.5
+author: Ninjay_
+main: me.ninjay.simplev2.Main
+commands:
+ staffchat:
+   aliases: [sc]
+ aviso:
+ gamemode:
+   aliases: [gm]
+ spawn:
+ teleportartodos:
+   aliases: [tpall]
+ dartag:
+ retirartag:

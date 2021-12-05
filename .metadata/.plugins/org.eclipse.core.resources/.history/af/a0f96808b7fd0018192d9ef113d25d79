@@ -1,0 +1,13 @@
+package me.ninjay.oneinfo.estruturas;
+
+import org.bukkit.entity.Player;
+
+import net.eduard.api.lib.BukkitConfig;
+
+public class EventosAPI {
+	
+	public static Long getTotal(Player p, BukkitConfig config) {
+		
+	}
+
+}

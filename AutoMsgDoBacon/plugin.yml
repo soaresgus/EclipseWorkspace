@@ -1,0 +1,4 @@
+name: B_AutoMensagem
+authors: [BaconCodes]
+version: 1.0
+main: net.b_automensagem.Main

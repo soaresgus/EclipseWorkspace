@@ -1,0 +1,5 @@
+name: NinjaUtils
+version: 1.0
+author: Ninjay_
+main: me.ninjay.utils.main.Main
+commands: 

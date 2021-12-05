@@ -1,0 +1,6 @@
+name: GeleiaGoldenAnvil
+version: 1.0
+author: Ninjay_
+main: me.ninjay.geleiagolden.main.Main
+commands:
+  daritens:

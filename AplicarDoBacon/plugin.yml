@@ -1,0 +1,6 @@
+name: B_Aplicar
+authors: [BaconCodes]
+version: 1.0
+main: net.b_aplicar.Main
+commands: 
+  aplicar:

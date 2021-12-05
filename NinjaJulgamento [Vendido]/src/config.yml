@@ -1,0 +1,15 @@
+#Lembrando que a vida do crepper é 20.
+
+#Configure o dano, considerando que a vida do crepper é 20 e que o dano será adicionado
+#ao dano da espada do jogador.
+
+#Dano da espada de diamante: 8
+#Dano da espada de ferro: 7
+#Dano da espada de pedra: 6
+#Dano da espada de madeira: 5
+
+1: 3
+2: 6
+3: 9
+4: 12
+5: 15

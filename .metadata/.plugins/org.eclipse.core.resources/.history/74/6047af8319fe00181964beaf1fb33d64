@@ -1,0 +1,44 @@
+package me.ninjay.oneperfil.glad.estruturas;
+
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
+
+import me.ninjay.oneperfil.main.Main;
+import me.ninjay.oneperfil.tct.estruturas.EstruturaTempo2;
+
+public class EstruturaAdmin {
+
+	public static void ajudastf(Player p) {
+		p.sendMessage(
+				"§e§lTcT Comandos\n \n§e§l/tct entrar §eEntre no evento.\n \n§e§l/tct iniciar §eInicie o evento.\n \n§e§l/tct setspawn §eSeta o spawn do evento.\n \n§e§l/tct setjogo §eSeta o local onde irá ocorrer o evento.\n \n§e§l/tct setmorte §eSeta o local no qual o jogador irá nascer se morrer no evento.\n \n§e§l/tct setganhador <nick> §eSeta o vencedor do evento.\n ");
+	}
+
+	public static void iniciar(Player p) {
+		Main.tempo2 = EstruturaTempo2.PRE2;
+		Bukkit.broadcastMessage(
+				"§e§lEvento - Todos Contra Todos\n \n§eIniciando em: 3 minutos\n \n§eLute contra todos, o ultimo a sobreviver ganha o evento !\n \n§ePara entrar utilize /tct entrar.");
+	}
+
+	public static void setspawn(Player p) {
+		p.sendMessage("§eLocal de spawn do evento setado.");
+		Main.tct.set("spawn_tct", p.getLocation());
+		Main.tct.saveConfig();
+	}
+
+	public static void setjogo(Player p) {
+		p.sendMessage("§eLocal de jogo do evento setado.");
+		Main.tct.set("jogo_tct", p.getLocation());
+		Main.tct.saveConfig();
+
+	}
+
+	public static void setmorte(Player p) {
+		p.sendMessage("§eLocal de morte do evento setado.");
+		Main.tct.set("morte_tct", p.getLocation());
+		Main.tct.saveConfig();
+	}
+
+}
+
+	
+}

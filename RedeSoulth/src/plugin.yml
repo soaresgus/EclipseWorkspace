@@ -1,0 +1,20 @@
+name: RedeSoulth
+version: 1.0
+main: me.ninjay.upsoulth.main.Main
+author: Ninjay_/@ManoNinjay
+depend: [CursoAPI]
+commands:
+  setarmina:
+  mina:
+  cash:
+  ranks:
+    aliases: [rank]
+  rankup:
+  login:
+  register:
+    aliases: [registrar]
+  trocarsenha:
+    aliases: [changepassword]
+  setloginspawn:
+  soulth:
+  bloco:

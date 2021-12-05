@@ -1,0 +1,7 @@
+name: RedeOneHologramas
+version: 1.0
+author: MyNameIsNinjay
+depend: [CursoAPI]
+main: me.ninjay.hologramas.main.Main
+commands:
+  holograma:

@@ -1,0 +1,6 @@
+name: B_LoginStaff
+authors: [BaconCodes]
+version: 1.0
+main: net.b_loginstaff.Main
+commands:
+  loginstaff:

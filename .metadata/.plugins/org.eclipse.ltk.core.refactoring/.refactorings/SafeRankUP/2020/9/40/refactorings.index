@@ -1,0 +1,5 @@
+1601508004397	Rename package 'me.ninjay.template'
+1601508016886	Rename type 'ComandoTemplate'
+1601509906677	Encapsulate field 'icon'
+1601509910346	Encapsulate field 'valor'
+1601510017065	Encapsulate field 'fileirasInvRanks'

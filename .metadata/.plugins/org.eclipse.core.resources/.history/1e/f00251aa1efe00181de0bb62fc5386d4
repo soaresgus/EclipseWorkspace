@@ -1,0 +1,9 @@
+package me.ninjay.oneperfil.glad.eventos;
+
+import org.bukkit.event.Listener;
+
+public class EventosGlad implements Listener{
+	
+	
+
+}

@@ -1,0 +1,12 @@
+package me.ninjay.megataymaquinas.estruturas;
+
+import me.ninjay.megataymaquinas.utils.Storable;
+import me.ninjay.megataymaquinas.utils.StorageAttributes;
+
+@StorageAttributes(indentificate=true)
+public class Maquina implements Storable{
+	
+ 
+	
+	
+}

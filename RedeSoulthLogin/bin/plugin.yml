@@ -1,0 +1,11 @@
+name: SoulthLogin
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.loginsoulth.main.Main
+commands: 
+  login:
+  register:
+    aliases: [registrar]
+  trocarsenha:
+    aliases: [changepassword]
+  setloginspawn:

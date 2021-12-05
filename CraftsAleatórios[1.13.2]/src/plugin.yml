@@ -1,0 +1,6 @@
+name: CraftsAleatorios
+version: 1.0
+author: Ninjay_
+main: me.ninjay.craftsaleatorios.main.Main
+commands:
+  daritens:

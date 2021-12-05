@@ -1,0 +1,17 @@
+1619363722113	Rename package 'me.ninjay.template'
+1619364487987	Rename type 'Item'
+1619364490766	Rename type 'ItemManager'
+1619364498053	Rename type 'Itema'
+1619434221841	Delete element
+1619434578515	Rename type 'ComandoTemplate'
+1619434599515	Rename type 'ComandoCaixa'
+1619435326584	Rename type 'ComandoTeste'
+1619437316534	Encapsulate field 'item'
+1619443338822	Encapsulate field 'caixa'
+1619443714085	Encapsulate field 'comando'
+1619443805909	Encapsulate field 'encantamentos'
+1619443878872	Encapsulate field 'encantamentos'
+1619444842171	Encapsulate field 'encantamentos'
+1619473464858	Encapsulate field 'caixa'
+1619519537180	Delete elements
+1619527301505	Delete element

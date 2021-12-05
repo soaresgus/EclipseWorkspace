@@ -1,0 +1,7 @@
+name: DNAMobs
+version: 1.0
+author: Ninjay_
+main: me.ninjay.dnamobs.main.Main
+api-version: 1.16
+commands:
+  daritens:

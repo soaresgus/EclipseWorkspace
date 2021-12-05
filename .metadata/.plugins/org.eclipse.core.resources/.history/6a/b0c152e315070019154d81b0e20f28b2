@@ -1,0 +1,48 @@
+package me.ninjay.oneperfil.tagsv2;
+
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+
+import com.nametagedit.plugin.NametagEdit;
+
+import net.eduard.api.lib.modules.VaultAPI;
+import net.sacredlabyrinth.phaed.simpleclans.ClanPlayer;
+import net.sacredlabyrinth.phaed.simpleclans.SimpleClans;
+
+
+public class TagsControler implements Listener{
+	
+	@EventHandler
+	public void aoEntrar(PlayerJoinEvent e) {
+		SimpleClans sc = SimpleClans.getInstance();
+        ClanPlayer scp = sc.getClanManager().getClanPlayer(e.getPlayer());
+		if(VaultAPI.getPermission().playerInGroup(e.getPlayer(), "diretor")) {
+			if(scp == null) {
+	        	NametagEdit.getApi().setPrefix(e.getPlayer(), "§6[Diretor] ");
+	        	NametagEdit.getApi().setSuffix(e.getPlayer(), "");
+	        	return;
+	        }
+	        if(scp != null) {
+	        	NametagEdit.getApi().setPrefix(e.getPlayer(), "§6[Diretor] ");
+	        	NametagEdit.getApi().setSuffix(e.getPlayer(), " §7["+scp.getTag().toUpperCase()+"]");
+	        	return;
+	        }
+		}
+		if(VaultAPI.getPermission().playerInGroup(e.getPlayer(), "gerente")) {
+			if(scp == null) {
+	        	NametagEdit.getApi().setPrefix(e.getPlayer(), "§4[Gerente] ");
+	        	NametagEdit.getApi().setSuffix(e.getPlayer(), "");
+	        	return;
+	        }
+	        if(scp != null) {
+	        	NametagEdit.getApi().setPrefix(e.getPlayer(), "§4[Gerente] ");
+	        	NametagEdit.getApi().setSuffix(e.getPlayer(), " §7["+scp.getTag().toUpperCase()+"]");
+	        	return;
+	        }
+		}
+		
+	}
+}
+	
+

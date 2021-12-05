@@ -1,0 +1,9 @@
+name: GeleiaShop
+version: 1.0
+author: Ninjay_
+main: me.ninjay.geleiashop.main.Main
+commands:
+  money:
+   aliases: [dinheiro, coin, economia]
+  resetar:
+   aliases: [reset]

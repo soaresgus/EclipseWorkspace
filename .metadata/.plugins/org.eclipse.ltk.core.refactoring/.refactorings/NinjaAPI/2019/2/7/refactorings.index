@@ -1,0 +1,12 @@
+1549831242253	Encapsulate field 'number'
+1549906280972	Rename type 'EventosAPI'
+1549907023540	Delete element
+1550073429761	Copy compilation unit
+1550073621817	Delete element
+1550073679271	Delete element
+1550074055878	Encapsulate field 'comando'
+1550074612631	Encapsulate field 'comoJogar'
+1550157941688	Copy compilation units
+1550253045578	Encapsulate field 'inv'
+1550286362998	Encapsulate field 'spawn'
+1550288046200	Rename package 'me.ninjay.ninjaapi.game.EventosAPI'

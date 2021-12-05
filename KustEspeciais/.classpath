@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Ninja/Desktop/&apos;/Plugins/BungeeCord.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ninja/Desktop/&apos;/Plugins/spigot-1.8.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ninja/Desktop/&apos;/Plugins/Vault.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ninja/Desktop/&apos;/Plugins/MambaFactions_Premium.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ninja/Desktop/&apos;/Plugins/MambaMassiveCore_Premium.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/KustCash"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/KustLogs"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

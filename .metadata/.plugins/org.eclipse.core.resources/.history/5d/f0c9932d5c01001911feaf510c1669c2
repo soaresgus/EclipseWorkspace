@@ -1,0 +1,7 @@
+package me.ninjay.oneperfil.ranksbeta;
+
+public class Snippet {
+	public static void main(String[] args) {
+		"§fBem Vindo ao §b§lRede Soulth\n \n§a→ §fPara mudar sua senha: §6/trocarsenha.\n§a→ §fCompre nossos vip's, em nossa loja: §6loja.soulthnetwork.com\n§a→ §fEntre em nosso grupo do 'Discord': §6/discord"	}
+}
+

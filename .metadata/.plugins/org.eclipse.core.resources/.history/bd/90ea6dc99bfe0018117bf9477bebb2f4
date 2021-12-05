@@ -1,0 +1,13 @@
+name: RedeOnePerfil
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.oneperfil.main.Main
+commands:
+  perfil:
+  tct:
+  mvp:
+  glad:
+    aliases: [gladiator]
+
+    
+    "§eJogador: ["+p.getName()+"]\nClan: [Em Breve]\nCoins: "+VaultAPI.getEconomy().getBalance(p)+"\nRank: [Em Breve]\n \nKDR: ["+StatsAPI.getKdr(p, Main.kdr)+"]\nAbates: ["+StatsAPI.getKills(p, Main.kdr)+"]\nMortes: ["+StatsAPI.getMortes(p, Main.kdr)+"]\n \nBlocos Minerados: ["+BlocosAPI.getBlocos(p, Main.blocos)+"]\nHoras Online: ["+DataAPI.getTempoOnline(p, Main.data)+"]\n \nEventos Vitórias [Total]: ["+EventosAPI.getTotal(p, Main.wins)+"]\nGladiator Vitórias: ["+EventosAPI.getWinsGlad(p, Main.wins)+"]\nTodos Contra Todos Vitórias: ["+EventosAPI.getWinsTcT(p, Main.wins)+"]\nClan x Clan Vitórias: ["+EventosAPI.getWinsCxC(p, Main.wins)+"]\nMobs Vs Player Vitórias: ["+EventosAPI.getWinsMvP(p, Main.wins)+"]\nÚltimo Login: ["+DataAPI.getUltimoLogin(p, Main.data)+"]"

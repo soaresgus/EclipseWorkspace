@@ -1,0 +1,14 @@
+package me.ninjay.oneperfil.ranks;
+
+import org.bukkit.inventory.ItemStack;
+
+import net.eduard.api.lib.storage.Storable;
+
+public class RankUp implements Storable{
+	
+	private String nome;
+	private ItemStack icone;
+	private Long blocos;
+	
+
+}

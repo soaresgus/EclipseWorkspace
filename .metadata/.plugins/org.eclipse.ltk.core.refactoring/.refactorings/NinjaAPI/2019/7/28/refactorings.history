@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;LoginAPI.java&apos; to &apos;RankUPAurea/src/me.ninjay.aureaup.estruturas&apos;&#x0D;&#x0A;- Original project: &apos;NinjaAPI&apos;&#x0D;&#x0A;- Destination element: &apos;RankUPAurea/src/me.ninjay.aureaup.estruturas&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.ninjaapi.bukkit.LoginAPI.LoginAPI.java&apos;" description="Copy compilation unit" destination="=RankUPAurea/src&lt;me.ninjay.aureaup.estruturas" element1="/src&lt;me.ninjay.ninjaapi.bukkit.LoginAPI{LoginAPI.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1562481911741" units="1" version="1.0"/>
+</session>

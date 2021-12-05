@@ -1,0 +1,11 @@
+name: RankUPAurea
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.aureaup.main.Main
+commands:
+  login:
+    aliases: [logar]
+  register:
+    aliases: [registrar]
+  trocarsenha:
+    aliases: [changeepassword]

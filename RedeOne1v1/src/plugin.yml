@@ -1,0 +1,8 @@
+name: RedeOne1v1
+version: 1.0
+author: Ninjay_
+depend: [CursoAPI]
+main: me.ninjay.one1v1.main.Main
+commands:
+  x1:
+   aliases: [duel]

@@ -1,0 +1,12 @@
+name: RedeOnePerfil
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.oneperfil.main.Main
+commands:
+  perfil:
+  tct:
+  mvp:
+  glad:
+    aliases: [gladiator]
+
+    

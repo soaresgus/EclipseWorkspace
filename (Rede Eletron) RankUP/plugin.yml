@@ -1,0 +1,6 @@
+name: EletronRankUP
+version: 1.0
+main: br.beta.eletron.rankup.Main
+commands:
+  ranks:
+  rankup:

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ItensAPI.java&apos; to &apos;BotasCustom/src/me.ninjay.template.estruturas&apos;&#x0D;&#x0A;- Original project: &apos;TemplateItensCustom1.12&apos;&#x0D;&#x0A;- Destination element: &apos;BotasCustom/src/me.ninjay.template.estruturas&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.template.estruturas.ItensAPI.java&apos;" description="Copy compilation unit" destination="=BotasCustom/src&lt;me.ninjay.template.estruturas" element1="/src&lt;me.ninjay.template.estruturas{ItensAPI.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1630626513028" units="1" version="1.0"/>
+</session>

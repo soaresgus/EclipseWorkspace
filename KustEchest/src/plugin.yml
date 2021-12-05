@@ -1,0 +1,7 @@
+name: KustEchest
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustechest.main.Main
+commands:
+  echest:
+   aliases: [enderchest, ec]

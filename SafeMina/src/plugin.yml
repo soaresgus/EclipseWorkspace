@@ -1,0 +1,8 @@
+name: SafeMina
+version: 1.0
+author: Ninjay_
+main: me.ninjay.safemina.main.Main
+commands:
+  mina:
+  escavar:
+

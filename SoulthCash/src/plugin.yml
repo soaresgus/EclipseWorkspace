@@ -1,0 +1,7 @@
+name: SoulthCash
+version: 1.0
+author: Ninjay_
+depend: [CursoAPI]
+main: me.ninjay.soulthcash.main.Main
+commands:
+  cash:

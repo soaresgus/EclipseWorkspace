@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;NPC.java&apos; to &apos;YoutuberTrade[1.16.5]/src/me.ninjay.youtubertrade.estruturas&apos;&#x0D;&#x0A;- Original project: &apos;Curso&apos;&#x0D;&#x0A;- Destination element: &apos;YoutuberTrade[1.16.5]/src/me.ninjay.youtubertrade.estruturas&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.curso.nms.NPC.java&apos;" description="Copy compilation unit" destination="=YoutuberTrade\[1.16.5\]/src&lt;me.ninjay.youtubertrade.estruturas" element1="/src&lt;me.ninjay.curso.nms{NPC.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1625757111431" units="1" version="1.0"/>
+</session>

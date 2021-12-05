@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/NinjaUtils"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SafeMina"/>
+	<classpathentry kind="lib" path="C:/Users/Ninja/Desktop/ㅤ/Plugins/BungeeCord.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ninja/Desktop/ㅤ/Plugins/NametagEdit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ninja/Desktop/ㅤ/Plugins/spigot-1.8.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Ninja/Desktop/ㅤ/Plugins/Vault.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

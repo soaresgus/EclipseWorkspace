@@ -1,0 +1,6 @@
+name: SafeExplorar
+version: 1.0
+author: Ninjay_
+main: me.ninjay.safeexplorar.main.Main
+commands:
+  explorar:

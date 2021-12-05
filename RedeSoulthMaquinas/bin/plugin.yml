@@ -1,0 +1,8 @@
+name: RedeSoulthMaquinas
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.soulthmaquinas.main.Main
+depend: [CursoAPI]
+commands:
+  maquina:
+  darmaquina:

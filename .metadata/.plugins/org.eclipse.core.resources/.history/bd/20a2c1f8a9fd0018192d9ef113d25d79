@@ -1,0 +1,9 @@
+name: RedeOneInfo
+version: 1.0
+author: MyNameIsNinjay
+main: me.ninjay.oneinfo.main.Main
+commands:
+  info:
+  tct:
+  mvp:
+  mvp2:

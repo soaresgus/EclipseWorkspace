@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;me.ninjay.safecore.estruturas.skills.EventosSkillsHab&apos; to &apos;EventosSkillsUp&apos;&#x0D;&#x0A;- Original project: &apos;SafeCore&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.safecore.estruturas.skills.EventosSkillsHab&apos;&#x0D;&#x0A;- Renamed element: &apos;me.ninjay.safecore.estruturas.skills.EventosSkillsUp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;EventosSkillsHab&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;me.ninjay.safecore.estruturas.skills{EventosSkillsHab.java[EventosSkillsHab" matchStrategy="1" name="EventosSkillsUp" qualified="false" references="true" similarDeclarations="false" stamp="1591049750770" textual="false" version="1.0"/>
+</session>

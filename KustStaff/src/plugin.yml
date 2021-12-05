@@ -1,0 +1,16 @@
+name: KustStaff
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kuststaff.main.Main
+commands:
+  player:
+   aliases: [whois]
+  v:
+   aliases: [visible, vanish]
+  reports:
+   aliases: [denuncias]
+  report:
+   aliases: [reportar, denunciar, denuncia]
+  s:
+   aliases: [sc, staffchat]
+  staff:

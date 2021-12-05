@@ -1,0 +1,8 @@
+name: KustGerenciador
+version: 1.0
+author: Ninjay_
+main: me.ninjay.kustgerenciador.main.Main
+commands:
+  gerenciar:
+   aliases: [gerenciador]
+  arena:

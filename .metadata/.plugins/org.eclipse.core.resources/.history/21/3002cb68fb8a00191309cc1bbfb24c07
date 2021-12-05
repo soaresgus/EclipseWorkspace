@@ -1,0 +1,66 @@
+package me.ninjay.megataymaquinas.estruturas;
+
+import java.util.ArrayList;
+
+import org.bukkit.Location;
+import org.bukkit.block.Block;
+import org.bukkit.entity.Player;
+import org.bukkit.event.block.Action;
+import org.bukkit.inventory.Inventory;
+
+import me.ninjay.megataymaquinas.main.Main;
+import me.ninjay.megataymaquinas.utils.BukkitConfig;
+import me.ninjay.megataymaquinas.utils.Mine;
+import me.ninjay.megataymaquinas.utils.Storable;
+
+public class MaquinaManager implements Storable{
+	
+	public static BukkitConfig config = new BukkitConfig("playermachine.yml", Main.getPlugin(Main.class));
+	
+	public Maquina getMaquinaNome(String nome) {
+		for(Maquina maquina : maquinas) {
+			if(maquina.getNome().equalsIgnoreCase(nome)) {
+				return maquina;
+			}
+		}
+		return null;
+	}
+	
+	public Maquina getMaquinaNumero(Integer numero) {
+		for(Maquina maquina : maquinas) {
+			if(maquina.getNumero() == numero) {
+				return maquina;
+			}
+		}
+		return null;
+	}
+	
+	private ArrayList<Maquina> maquinas = new ArrayList<>();
+
+	public ArrayList<Maquina> getMaquinas() {
+		return maquinas;
+	}
+
+	public void setMaquinas(ArrayList<Maquina> maquinas) {
+		this.maquinas = maquinas;
+	}
+	
+	public static void aoColocar(Player p, Maquina maquina, Block bloco) {
+		if(p.getItemInHand().isSimilar(maquina.getIcone())) {
+			p.sendMessage("§aVocê colocou uma "+maquina.getIcone().getItemMeta().getDisplayName());
+			config.set(p.getName(), bloco.getLocation());
+			config.saveConfig();
+			double x = bloco.getX()+0.5;
+			double y = bloco.getY()-0.5;
+			double z = bloco.getZ()+0.5;
+			Location l = new Location(p.getWorld(), x, y, z);
+			Mine.newHologram(l, "§eMáquina de §6"+p.getName());
+		}
+	}
+
+	public static void aoClicar(Player p, Maquina maquina) {
+		Inventory menu = Mine.newInventory("Máquina de "+p.getName(), 9*3);
+		
+	}
+	
+}

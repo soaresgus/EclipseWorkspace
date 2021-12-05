@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Mine.java&apos; to &apos;NinjaTesouros/src/me.ninjay.ninjatesouros.utils&apos;&#x0D;&#x0A;- Original project: &apos;_Template&apos;&#x0D;&#x0A;- Destination element: &apos;NinjaTesouros/src/me.ninjay.ninjatesouros.utils&apos;&#x0D;&#x0A;- Original element: &apos;me.ninjay.template.utils.Mine.java&apos;" description="Copy compilation unit" destination="=NinjaTesouros/src&lt;me.ninjay.ninjatesouros.utils" element1="/src&lt;me.ninjay.template.utils{Mine.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1577473728529" units="1" version="1.0"/>
+</session>
